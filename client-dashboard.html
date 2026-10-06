@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly Toys & Games | Client Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/client-dashboard.css">
+
+</head>
+
+
+<body>
+
+<div class="stackly-dashboard">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="stackly-sidebar" id="stacklySidebar">
+
+        <div class="stackly-sidebar-top">
+
+
+            <!-- LOGO -->
+
+            <a href="#overview" class="stackly-dashboard-logo">
+
+                <img
+                    src="assets/green-stackly-logo.webp"
+                    alt="Stackly Toys & Games">
+
+            </a>
+
+
+            <!-- USER -->
+
+            <div class="stackly-sidebar-user">
+
+                <div
+                    class="stackly-user-avatar"
+                    id="sidebarUserAvatar">
+                    U
+                </div>
+
+                <div class="stackly-user-info">
+
+                    <strong id="sidebarUserName">
+                        Stackly User
+                    </strong>
+
+                    <span id="sidebarUserEmail">
+                        user@stackly.com
+                    </span>
+
+                    <small>
+                        CLIENT
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENU TITLE -->
+
+            <div class="stackly-menu-title">
+                MY PLAYGROUND
+            </div>
+
+
+            <!-- MENU -->
+
+            <nav class="stackly-dashboard-menu">
+
+                <a
+                    href="#overview"
+                    class="dashboard-menu-link active">
+
+                    <span class="material-icons">
+                        dashboard
+                    </span>
+
+                    <span>Overview</span>
+
+                </a>
+
+
+                <a
+                    href="#collections"
+                    class="dashboard-menu-link">
+
+                    <span class="material-icons">
+                        toys
+                    </span>
+
+                    <span>My Collections</span>
+
+                    <small>6</small>
+
+                </a>
+
+
+                <a
+                    href="#orders"
+                    class="dashboard-menu-link">
+
+                    <span class="material-icons">
+                        shopping_bag
+                    </span>
+
+                    <span>My Orders</span>
+
+                    <small>3</small>
+
+                </a>
+
+
+                <a
+                    href="#wishlist"
+                    class="dashboard-menu-link">
+
+                    <span class="material-icons">
+                        favorite
+                    </span>
+
+                    <span>Wishlist</span>
+
+                </a>
+
+
+                <a
+                    href="#rewards"
+                    class="dashboard-menu-link">
+
+                    <span class="material-icons">
+                        workspace_premium
+                    </span>
+
+                    <span>Rewards</span>
+
+                    <small>420</small>
+
+                </a>
+
+
+                <a
+                    href="#support"
+                    class="dashboard-menu-link">
+
+                    <span class="material-icons">
+                        support_agent
+                    </span>
+
+                    <span>Support Center</span>
+
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <!-- LOGOUT -->
+
+        <div class="stackly-sidebar-bottom">
+
+            <a href="login.html" class="stackly-logout">
+
+                <span class="material-icons">
+                    logout
+                </span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- SIDEBAR OVERLAY -->
+
+    <div
+        class="stackly-sidebar-overlay"
+        id="sidebarOverlay">
+    </div>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="stackly-dashboard-main">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="stackly-dashboard-header">
+
+
+            <div class="stackly-header-left">
+
+                <!-- MOBILE TOGGLE -->
+
+                <button
+                    type="button"
+                    class="stackly-dashboard-toggle"
+                    id="dashboardToggle">
+
+                    <span class="material-icons">
+                        menu
+                    </span>
+
+                </button>
+
+
+                <div>
+
+                    <h1 id="dashboardPageTitle">
+                        Overview
+                    </h1>
+
+                    <p id="dashboardPageSubtitle">
+                        Your Stackly shopping journey at a glance.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stackly-header-right">
+
+
+                <!-- SEARCH -->
+
+                <button
+                    type="button"
+                    class="stackly-dashboard-search"
+                    id="dashboardSearch">
+
+                    <span class="material-icons">
+                        search
+                    </span>
+
+                    <span>
+                        Search your collection...
+                    </span>
+
+                </button>
+
+
+                <!-- USER -->
+
+                <div class="stackly-header-user">
+
+                    <span
+                        class="stackly-header-avatar"
+                        id="headerUserAvatar">
+                        U
+                    </span>
+
+                    <div class="stackly-header-user-info">
+
+                        <strong id="headerUserName">
+                            Stackly User
+                        </strong>
+
+                        <span id="headerUserEmail">
+                            user@stackly.com
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             DASHBOARD CONTENT
+        ================================================== -->
+
+        <div class="stackly-dashboard-content">
+
+
+            <!-- =================================================
+                 OVERVIEW
+            ================================================== -->
+
+            <section
+                class="dashboard-page active-page"
+                id="overview">
+
+
+                <!-- WELCOME -->
+
+                <div class="stackly-welcome-card">
+
+                    <div class="stackly-welcome-content">
+
+                        <span>
+                            STACKLY TOYS & GAMES
+                        </span>
+
+                        <h2>
+                            Welcome back,
+                            <strong id="welcomeUserName">
+                                Stackly User
+                            </strong>
+                        </h2>
+
+                        <p>
+                            Discover your latest toys, saved collections,
+                            orders, rewards and personalized picks.
+                        </p>
+
+                    </div>
+
+                    <div class="stackly-welcome-actions">
+
+                        <a
+                            href="#collections"
+                            class="stackly-dashboard-btn primary-btn">
+                            Explore Collection
+                        </a>
+
+                        <a
+                            href="#orders"
+                            class="stackly-dashboard-btn secondary-btn">
+                            View Orders
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="stackly-dashboard-stats">
+
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon green-icon">
+                            <span class="material-icons">
+                                toys
+                            </span>
+                        </div>
+
+                        <span class="stat-label">
+                            SAVED TOYS
+                        </span>
+
+                        <strong>
+                            24
+                        </strong>
+
+                        <small>
+                            6 collections saved
+                        </small>
+
+                    </div>
+
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon purple-icon">
+                            <span class="material-icons">
+                                shopping_bag
+                            </span>
+                        </div>
+
+                        <span class="stat-label">
+                            TOTAL ORDERS
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+
+                        <small>
+                            2 currently processing
+                        </small>
+
+                    </div>
+
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon orange-icon">
+                            <span class="material-icons">
+                                workspace_premium
+                            </span>
+                        </div>
+
+                        <span class="stat-label">
+                            PLAY POINTS
+                        </span>
+
+                        <strong>
+                            420
+                        </strong>
+
+                        <small>
+                            80 points to next reward
+                        </small>
+
+                    </div>
+
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon blue-icon">
+                            <span class="material-icons">
+                                favorite
+                            </span>
+                        </div>
+
+                        <span class="stat-label">
+                            WISHLIST
+                        </span>
+
+                        <strong>
+                            8
+                        </strong>
+
+                        <small>
+                            3 new price updates
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TWO COLUMN -->
+
+                <div class="dashboard-two-column">
+
+
+                    <!-- RECENT ORDERS -->
+
+                    <div class="dashboard-panel">
+
+                        <div class="dashboard-panel-heading">
+
+                            <div>
+
+                                <h3>
+                                    Recent Orders
+                                </h3>
+
+                                <p>
+                                    Your latest Stackly purchases
+                                </p>
+
+                            </div>
+
+                            <a href="#orders">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <div class="dashboard-order-list">
+
+
+                            <div class="dashboard-order">
+
+                                <div class="order-image">
+                                    <img
+                                        src="assets/robot-toy.webp"
+                                        alt="Robot Toy">
+                                </div>
+
+                                <div class="order-info">
+
+                                    <strong>
+                                        Smart Robot Toy
+                                    </strong>
+
+                                    <span>
+                                        Order #STK-2048
+                                    </span>
+
+                                </div>
+
+                                <div class="order-status delivered">
+                                    Delivered
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-order">
+
+                                <div class="order-image">
+                                    <img
+                                        src="assets/collection-games (1).webp"
+                                        alt="Game Set">
+                                </div>
+
+                                <div class="order-info">
+
+                                    <strong>
+                                        Family Game Set
+                                    </strong>
+
+                                    <span>
+                                        Order #STK-2039
+                                    </span>
+
+                                </div>
+
+                                <div class="order-status processing">
+                                    Processing
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-order">
+
+                                <div class="order-image">
+                                    <img
+                                        src="assets/car1.webp"
+                                        alt="Green Car">
+                                </div>
+
+                                <div class="order-info">
+
+                                    <strong>
+                                        Racing Car
+                                    </strong>
+
+                                    <span>
+                                        Order #STK-2027
+                                    </span>
+
+                                </div>
+
+                                <div class="order-status shipped">
+                                    Shipped
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECOMMENDED -->
+
+                    <div class="dashboard-panel">
+
+                        <div class="dashboard-panel-heading">
+
+                            <div>
+
+                                <h3>
+                                    Picked For You
+                                </h3>
+
+                                <p>
+                                    Popular toys you may like
+                                </p>
+
+                            </div>
+
+                            <a href="404.html">
+                                Explore
+                            </a>
+
+                        </div>
+
+
+                        <div class="dashboard-product-mini">
+
+
+                            <div class="mini-product">
+
+                                <img
+                                    src="assets/teddy-img.webp"
+                                    alt="Teddy Bear">
+
+                                <div>
+
+                                    <strong>
+                                        Classic Teddy
+                                    </strong>
+
+                                    <span>
+                                        ₹899
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mini-product">
+
+                                <img
+                                    src="assets/panda-toy.webp"
+                                    alt="Panda Toy">
+
+                                <div>
+
+                                    <strong>
+                                        Panda Buddy
+                                    </strong>
+
+                                    <span>
+                                        ₹749
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mini-product">
+
+                                <img
+                                    src="assets/dragon-toy.webp"
+                                    alt="Dragon Toy">
+
+                                <div>
+
+                                    <strong>
+                                        Dragon Adventure
+                                    </strong>
+
+                                    <span>
+                                        ₹1,299
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVITY -->
+
+                <div class="dashboard-panel activity-panel">
+
+                    <div class="dashboard-panel-heading">
+
+                        <div>
+
+                            <h3>
+                                Your Play Activity
+                            </h3>
+
+                            <p>
+                                Recent activity from your account
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-grid">
+
+                        <div class="activity-item">
+
+                            <span class="material-icons">
+                                favorite
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Added Dragon Adventure
+                                </strong>
+
+                                <small>
+                                    to your wishlist
+                                </small>
+
+                            </div>
+
+                            <time>
+                                2h ago
+                            </time>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <span class="material-icons">
+                                local_shipping
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Family Game Set
+                                </strong>
+
+                                <small>
+                                    order is being prepared
+                                </small>
+
+                            </div>
+
+                            <time>
+                                5h ago
+                            </time>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <span class="material-icons">
+                                workspace_premium
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    50 Play Points
+                                </strong>
+
+                                <small>
+                                    added to your account
+                                </small>
+
+                            </div>
+
+                            <time>
+                                Yesterday
+                            </time>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 COLLECTIONS
+            ================================================== -->
+
+            <section
+                class="dashboard-page"
+                id="collections">
+
+                <div class="dashboard-page-heading">
+
+                    <div>
+
+                        <span>
+                            MY COLLECTIONS
+                        </span>
+
+                        <h2>
+                            Your Toy Collection
+                        </h2>
+
+                        <p>
+                            Keep track of the toys and games you love most.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="404.html"
+                        class="stackly-dashboard-btn primary-btn">
+                        Discover More
+                    </a>
+
+                </div>
+
+
+                <div class="collection-grid">
+
+
+                    <div class="collection-card">
+
+                        <div class="collection-image">
+                            <img
+                                src="assets/robot-toy.webp"
+                                alt="Robots">
+                        </div>
+
+                        <div class="collection-content">
+
+                            <span>
+                                8 ITEMS
+                            </span>
+
+                            <h3>
+                                Smart & Robot Toys
+                            </h3>
+
+                            <p>
+                                Explore interactive and futuristic
+                                toy collections.
+                            </p>
+
+                            <a href="404.html">
+                                Open Collection
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="collection-card">
+
+                        <div class="collection-image">
+                            <img
+                                src="assets/collection-games (1).webp"
+                                alt="Game Sets">
+                        </div>
+
+                        <div class="collection-content">
+
+                            <span>
+                                6 ITEMS
+                            </span>
+
+                            <h3>
+                                Game Night
+                            </h3>
+
+                            <p>
+                                Board games and exciting challenges
+                                for memorable moments.
+                            </p>
+
+                            <a href="404.html">
+                                Open Collection
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="collection-card">
+
+                        <div class="collection-image">
+                            <img
+                                src="assets/car.webp"
+                                alt="Cars">
+                        </div>
+
+                        <div class="collection-content">
+
+                            <span>
+                                5 ITEMS
+                            </span>
+
+                            <h3>
+                                Speed & Adventure
+                            </h3>
+
+                            <p>
+                                Discover racing toys and
+                                adventure collections.
+                            </p>
+
+                            <a href="404.html">
+                                Open Collection
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="collection-card">
+
+                        <div class="collection-image">
+                            <img
+                                src="assets/tortile-img.webp"
+                                alt="Turtle Toy">
+                        </div>
+
+                        <div class="collection-content">
+
+                            <span>
+                                5 ITEMS
+                            </span>
+
+                            <h3>
+                                Creative Favorites
+                            </h3>
+
+                            <p>
+                                Colorful toys selected for
+                                creative play.
+                            </p>
+
+                            <a href="404.html">
+                                Open Collection
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="client-collection-extra">
+
+    <div class="client-collection-intro">
+
+        <span class="material-icons">auto_awesome</span>
+
+        <div>
+            <small>YOUR PLAYGROUND</small>
+
+            <h3>More Ways to Explore</h3>
+
+            <p>
+                Discover different types of toys and games,
+                save your favorites and build collections that
+                match your interests.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="client-collection-info-grid">
+
+        <div class="client-collection-info-card">
+
+            <span class="material-icons">
+                extension
+            </span>
+
+            <div>
+                <h4>Build & Create</h4>
+
+                <p>
+                    Explore building sets, creative toys and
+                    exciting activities that let you create
+                    something new every time.
+                </p>
+
+                <strong>
+                    18 saved items
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="client-collection-info-card">
+
+            <span class="material-icons">
+                sports_esports
+            </span>
+
+            <div>
+                <h4>Game Night Favorites</h4>
+
+                <p>
+                    Keep your favorite board games, family games
+                    and fun challenges together in one collection.
+                </p>
+
+                <strong>
+                    12 saved items
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="client-collection-info-card">
+
+            <span class="material-icons">
+                directions_car
+            </span>
+
+            <div>
+                <h4>Action & Adventure</h4>
+
+                <p>
+                    Find exciting cars, adventure toys and action
+                    collections selected for your next play session.
+                </p>
+
+                <strong>
+                    9 saved items
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="client-collection-info-card">
+
+            <span class="material-icons">
+                emoji_objects
+            </span>
+
+            <div>
+                <h4>Creative Favorites</h4>
+
+                <p>
+                    Save colorful, imaginative and educational toys
+                    that inspire creativity and new ideas.
+                </p>
+
+                <strong>
+                    14 saved items
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="client-collection-bottom">
+
+        <div>
+
+            <span class="material-icons">
+                bookmark
+            </span>
+
+            <div>
+                <strong>Keep Building Your Collection</strong>
+
+                <p>
+                    Save products you love and organize your
+                    favorite toys and games for later.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="404.html">
+            Manage Saved Items
+        </a>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- =================================================
+                 ORDERS
+            ================================================== -->
+
+            <section
+                class="dashboard-page"
+                id="orders">
+
+                <div class="dashboard-page-heading">
+
+                    <div>
+
+                        <span>
+                            ORDER HISTORY
+                        </span>
+
+                        <h2>
+                            My Orders
+                        </h2>
+
+                        <p>
+                            Track your Stackly Toys & Games purchases.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="404.html"
+                        class="stackly-dashboard-btn primary-btn">
+                        Shop Toys
+                    </a>
+
+                </div>
+
+
+                <div class="orders-table-panel">
+
+                    <div class="orders-table-header">
+
+                        <span>PRODUCT</span>
+                        <span>ORDER ID</span>
+                        <span>DATE</span>
+                        <span>STATUS</span>
+                        <span>ACTION</span>
+
+                    </div>
+
+
+                    <div class="orders-table-row">
+
+                        <div class="table-product">
+
+                            <img
+                                src="assets/robot-toy.webp"
+                                alt="Robot">
+
+                            <div>
+
+                                <strong>
+                                    Smart Robot Toy
+                                </strong>
+
+                                <small>
+                                    Quantity: 1
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <span>
+                            #STK-2048
+                        </span>
+
+                        <span>
+                            02 Oct 2026
+                        </span>
+
+                        <span class="order-status delivered">
+                            Delivered
+                        </span>
+
+                        <a href="404.html">
+                            View
+                        </a>
+
+                    </div>
+
+
+                    <div class="orders-table-row">
+
+                        <div class="table-product">
+
+                            <img
+                                src="assets/collection-games (1).webp"
+                                alt="Game Set">
+
+                            <div>
+
+                                <strong>
+                                    Family Game Set
+                                </strong>
+
+                                <small>
+                                    Quantity: 1
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <span>
+                            #STK-2039
+                        </span>
+
+                        <span>
+                            29 Sep 2026
+                        </span>
+
+                        <span class="order-status processing">
+                            Processing
+                        </span>
+
+                        <a href="404.html">
+                            View
+                        </a>
+
+                    </div>
+
+
+                    <div class="orders-table-row">
+
+                        <div class="table-product">
+
+                            <img
+                                src="assets/car1.webp"
+                                alt="Car">
+
+                            <div>
+
+                                <strong>
+                                    Racing Car
+                                </strong>
+
+                                <small>
+                                    Quantity: 2
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <span>
+                            #STK-2027
+                        </span>
+
+                        <span>
+                            24 Sep 2026
+                        </span>
+
+                        <span class="order-status shipped">
+                            Shipped
+                        </span>
+
+                        <a href="404.html">
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="client-orders-extra">
+
+    <!-- ORDER OVERVIEW -->
+
+    <div class="client-orders-overview">
+
+        <div class="client-orders-overview-title">
+
+            <span class="material-icons">
+                shopping_bag
+            </span>
+
+            <div>
+                <small>SHOPPING ACTIVITY</small>
+
+                <h3>Your Order Journey</h3>
+
+                <p>
+                    Keep track of your Stackly Toys & Games
+                    purchases from order confirmation to delivery.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="client-order-summary">
+
+            <div>
+                <strong>12</strong>
+                <span>Total Orders</span>
+            </div>
+
+            <div>
+                <strong>2</strong>
+                <span>Processing</span>
+            </div>
+
+            <div>
+                <strong>1</strong>
+                <span>On The Way</span>
+            </div>
+
+            <div>
+                <strong>9</strong>
+                <span>Delivered</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ORDER PROCESS -->
+
+    <div class="client-order-process">
+
+        <div class="client-order-process-heading">
+
+            <div>
+                <small>ORDER EXPERIENCE</small>
+
+                <h3>How Your Order Moves</h3>
+            </div>
+
+            <span class="material-icons">
+                route
+            </span>
+
+        </div>
+
+
+        <div class="client-order-steps">
+
+            <div class="client-order-step completed">
+
+                <span class="material-icons">
+                    receipt_long
+                </span>
+
+                <div>
+                    <strong>Order Confirmed</strong>
+
+                    <p>
+                        Your order has been successfully placed
+                        and confirmed.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="client-order-step completed">
+
+                <span class="material-icons">
+                    inventory_2
+                </span>
+
+                <div>
+                    <strong>Preparing Your Toys</strong>
+
+                    <p>
+                        Your selected products are being prepared
+                        for secure packaging.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="client-order-step active">
+
+                <span class="material-icons">
+                    local_shipping
+                </span>
+
+                <div>
+                    <strong>On The Way</strong>
+
+                    <p>
+                        Your order is moving toward your delivery
+                        location.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="client-order-step">
+
+                <span class="material-icons">
+                    home
+                </span>
+
+                <div>
+                    <strong>Delivered</strong>
+
+                    <p>
+                        Enjoy your new toys and games when your
+                        order reaches you.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ORDER HELP -->
+
+    <div class="client-order-help">
+
+        <div class="client-order-help-icon">
+
+            <span class="material-icons">
+                support_agent
+            </span>
+
+        </div>
+
+
+        <div class="client-order-help-content">
+
+            <small>NEED HELP?</small>
+
+            <h3>Questions About Your Orders?</h3>
+
+            <p>
+                Get assistance with delivery updates,
+                order information, returns or product support.
+            </p>
+
+        </div>
+
+
+        <a href="404.html">
+            Contact Support
+        </a>
+
+    </div>
+
+
+    <!-- ORDER BENEFITS -->
+
+    <div class="client-order-benefits">
+
+        <div class="client-order-benefit">
+
+            <span class="material-icons">
+                verified
+            </span>
+
+            <div>
+                <strong>Secure Shopping</strong>
+
+                <p>
+                    Your orders are handled with care
+                    from checkout to delivery.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="client-order-benefit">
+
+            <span class="material-icons">
+                local_shipping
+            </span>
+
+            <div>
+                <strong>Reliable Delivery</strong>
+
+                <p>
+                    Stay updated throughout your
+                    order delivery journey.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="client-order-benefit">
+
+            <span class="material-icons">
+                replay
+            </span>
+
+            <div>
+                <strong>Easy Assistance</strong>
+
+                <p>
+                    Our support team is available when
+                    you need help with your purchase.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- =================================================
+                 WISHLIST
+            ================================================== -->
+
+            <section
+                class="dashboard-page"
+                id="wishlist">
+
+                <div class="dashboard-page-heading">
+
+                    <div>
+
+                        <span>
+                            SAVED PRODUCTS
+                        </span>
+
+                        <h2>
+                            My Wishlist
+                        </h2>
+
+                        <p>
+                            Your favorite Stackly toys in one place.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="404.html"
+                        class="stackly-dashboard-btn primary-btn">
+                        Explore Toys
+                    </a>
+
+                </div>
+
+
+                <div class="wishlist-grid">
+
+
+                    <div class="wishlist-card">
+
+                        <button
+                            type="button"
+                            class="wishlist-heart">
+                            <span class="material-icons">
+                                favorite
+                            </span>
+                        </button>
+
+                        <img
+                            src="assets/teddy-img.webp"
+                            alt="Teddy Bear">
+
+                        <div>
+
+                            <span>
+                                CLASSIC COLLECTION
+                            </span>
+
+                            <h3>
+                                Classic Teddy Bear
+                            </h3>
+
+                            <strong>
+                                ₹899
+                            </strong>
+
+                            <a href="404.html">
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="wishlist-card">
+
+                        <button
+                            type="button"
+                            class="wishlist-heart">
+                            <span class="material-icons">
+                                favorite
+                            </span>
+                        </button>
+
+                        <img
+                            src="assets/panda-toy.webp"
+                            alt="Panda">
+
+                        <div>
+
+                            <span>
+                                FAVORITE TOYS
+                            </span>
+
+                            <h3>
+                                Panda Buddy
+                            </h3>
+
+                            <strong>
+                                ₹749
+                            </strong>
+
+                            <a href="404.html">
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="wishlist-card">
+
+                        <button
+                            type="button"
+                            class="wishlist-heart">
+                            <span class="material-icons">
+                                favorite
+                            </span>
+                        </button>
+
+                        <img
+                            src="assets/dragon-toy.webp"
+                            alt="Dragon">
+
+                        <div>
+
+                            <span>
+                                ADVENTURE
+                            </span>
+
+                            <h3>
+                                Dragon Adventure
+                            </h3>
+
+                            <strong>
+                                ₹1,299
+                            </strong>
+
+                            <a href="404.html">
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- =====================================================
+     WISHLIST EXTRA CONTENT
+===================================================== -->
+
+<div class="client-wishlist-extra">
+
+    <!-- Wishlist Overview -->
+    <div class="client-wishlist-overview">
+
+        <div class="client-wishlist-overview-left">
+            <div class="client-wishlist-icon">
+                <span class="material-icons">favorite</span>
+            </div>
+
+            <div>
+                <small>YOUR FAVORITE PICKS</small>
+                <h3>Everything You Love, All in One Place</h3>
+                <p>
+                    Keep track of the toys and games you love most.
+                    Save your favorite products and come back whenever
+                    you are ready to make your next purchase.
+                </p>
+            </div>
+        </div>
+
+        <div class="client-wishlist-count">
+            <strong>24</strong>
+            <span>Saved Items</span>
+        </div>
+
+    </div>
+
+
+    <!-- Wishlist Categories -->
+    <div class="client-wishlist-categories">
+
+        <div class="client-wishlist-category">
+            <div class="client-wishlist-category-icon">
+                <span class="material-icons">sports_esports</span>
+            </div>
+
+            <div>
+                <small>GAMES</small>
+                <h4>Game Night Picks</h4>
+                <p>
+                    Board games, strategy games and exciting challenges
+                    saved for your next game session.
+                </p>
+                <strong>8 Favorites</strong>
+            </div>
+        </div>
+
+
+        <div class="client-wishlist-category">
+            <div class="client-wishlist-category-icon">
+                <span class="material-icons">extension</span>
+            </div>
+
+            <div>
+                <small>BUILD & CREATE</small>
+                <h4>Creative Favorites</h4>
+                <p>
+                    Discover building sets and creative products
+                    that keep your imagination moving.
+                </p>
+                <strong>6 Favorites</strong>
+            </div>
+        </div>
+
+
+        <div class="client-wishlist-category">
+            <div class="client-wishlist-category-icon">
+                <span class="material-icons">directions_car</span>
+            </div>
+
+            <div>
+                <small>ACTION</small>
+                <h4>Action Picks</h4>
+                <p>
+                    Keep your favorite cars, action toys and adventure
+                    products ready for your next shopping trip.
+                </p>
+                <strong>5 Favorites</strong>
+            </div>
+        </div>
+
+
+        <div class="client-wishlist-category">
+            <div class="client-wishlist-category-icon">
+                <span class="material-icons">auto_awesome</span>
+            </div>
+
+            <div>
+                <small>NEW DISCOVERIES</small>
+                <h4>Things to Explore</h4>
+                <p>
+                    Products you have recently discovered and want
+                    to remember for later.
+                </p>
+                <strong>5 Favorites</strong>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Wishlist Reminder -->
+    <div class="client-wishlist-reminder">
+
+        <div class="client-wishlist-reminder-icon">
+            <span class="material-icons">bookmark</span>
+        </div>
+
+        <div class="client-wishlist-reminder-content">
+            <small>WISHLIST REMINDER</small>
+            <h3>Don't Lose Track of Your Favorites</h3>
+            <p>
+                Your wishlist makes it easier to compare products,
+                plan your next purchase and quickly find the items
+                you already love.
+            </p>
+        </div>
+
+        <div class="client-wishlist-reminder-status">
+            <span class="material-icons">check_circle</span>
+            <strong>24 Items Saved</strong>
+        </div>
+
+    </div>
+
+
+    <!-- Wishlist Benefits -->
+    <div class="client-wishlist-benefits">
+
+        <div class="client-wishlist-benefit">
+            <span class="material-icons">favorite_border</span>
+            <div>
+                <h4>Save Favorites</h4>
+                <p>
+                    Keep your favorite toys and games together
+                    so they are easy to find later.
+                </p>
+            </div>
+        </div>
+
+        <div class="client-wishlist-benefit">
+            <span class="material-icons">compare</span>
+            <div>
+                <h4>Compare Before Buying</h4>
+                <p>
+                    Review your saved products before deciding
+                    what you want to purchase.
+                </p>
+            </div>
+        </div>
+
+        <div class="client-wishlist-benefit">
+            <span class="material-icons">shopping_bag</span>
+            <div>
+                <h4>Ready When You Are</h4>
+                <p>
+                    Return to your wishlist anytime and continue
+                    shopping whenever you are ready.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- =================================================
+                 REWARDS
+            ================================================== -->
+
+            <section
+                class="dashboard-page"
+                id="rewards">
+
+                <div class="dashboard-page-heading">
+
+                    <div>
+
+                        <span>
+                            STACKLY REWARDS
+                        </span>
+
+                        <h2>
+                            Play Points
+                        </h2>
+
+                        <p>
+                            Earn points while shopping and exploring Stackly.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reward-summary">
+
+                    <div class="reward-main">
+
+                        <span class="material-icons">
+                            workspace_premium
+                        </span>
+
+                        <div>
+
+                            <small>
+                                AVAILABLE PLAY POINTS
+                            </small>
+
+                            <strong>
+                                420
+                            </strong>
+
+                            <p>
+                                80 more points until your next reward.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="404.html"
+                        class="stackly-dashboard-btn light-btn">
+                        Redeem Points
+                    </a>
+
+                </div>
+
+
+                <div class="reward-grid">
+
+
+                    <div class="reward-card">
+
+                        <span class="material-icons">
+                            shopping_bag
+                        </span>
+
+                        <h3>
+                            Shop & Earn
+                        </h3>
+
+                        <p>
+                            Earn points on eligible Stackly purchases.
+                        </p>
+
+                        <strong>
+                            +10 Points
+                        </strong>
+
+                    </div>
+
+
+                    <div class="reward-card">
+
+                        <span class="material-icons">
+                            rate_review
+                        </span>
+
+                        <h3>
+                            Share Reviews
+                        </h3>
+
+                        <p>
+                            Share your product experience with the community.
+                        </p>
+
+                        <strong>
+                            +25 Points
+                        </strong>
+
+                    </div>
+
+
+                    <div class="reward-card">
+
+                        <span class="material-icons">
+                            person_add
+                        </span>
+
+                        <h3>
+                            Invite Friends
+                        </h3>
+
+                        <p>
+                            Invite friends and unlock additional rewards.
+                        </p>
+
+                        <strong>
+                            +50 Points
+                        </strong>
+
+                    </div>
+
+                </div>
+                <!-- =====================================================
+     REWARDS EXTRA CONTENT
+===================================================== -->
+
+<div class="client-rewards-extra">
+
+    <!-- Rewards Header Card -->
+    <div class="client-rewards-hero">
+
+        <div class="client-rewards-hero-content">
+            <div class="client-rewards-icon">
+                <span class="material-icons">workspace_premium</span>
+            </div>
+
+            <div>
+                <small>STACKLY REWARDS</small>
+                <h3>Play More. Earn More. Enjoy More.</h3>
+                <p>
+                    Every purchase and activity can bring you closer
+                    to exciting rewards, special benefits and exclusive
+                    offers from Stackly Toys & Games.
+                </p>
+            </div>
+        </div>
+
+        <div class="client-rewards-points">
+            <span>YOUR POINTS</span>
+            <strong>2,480</strong>
+            <small>Available Points</small>
+        </div>
+
+    </div>
+
+
+    <!-- Rewards Progress -->
+    <div class="client-rewards-progress">
+
+        <div class="client-rewards-progress-top">
+            <div>
+                <small>YOUR REWARD JOURNEY</small>
+                <h3>Silver Member</h3>
+            </div>
+
+            <strong>2,480 / 3,000 Points</strong>
+        </div>
+
+        <div class="client-rewards-progress-bar">
+            <span></span>
+        </div>
+
+        <div class="client-rewards-progress-bottom">
+            <span>Current Level</span>
+            <strong>520 points to Gold</strong>
+        </div>
+
+    </div>
+
+
+    <!-- Reward Levels -->
+    <div class="client-rewards-levels">
+
+        <div class="client-reward-level completed">
+            <div class="client-reward-level-icon">
+                <span class="material-icons">star</span>
+            </div>
+
+            <div>
+                <small>LEVEL 01</small>
+                <h4>Bronze Player</h4>
+                <p>Start collecting points with every eligible purchase.</p>
+                <strong>1,000 Points</strong>
+            </div>
+
+            <span class="material-icons client-reward-check">check_circle</span>
+        </div>
+
+
+        <div class="client-reward-level active">
+            <div class="client-reward-level-icon">
+                <span class="material-icons">workspace_premium</span>
+            </div>
+
+            <div>
+                <small>LEVEL 02</small>
+                <h4>Silver Player</h4>
+                <p>Unlock extra savings and special Stackly member benefits.</p>
+                <strong>2,000 Points</strong>
+            </div>
+
+            <span class="material-icons client-reward-check">check_circle</span>
+        </div>
+
+
+        <div class="client-reward-level">
+            <div class="client-reward-level-icon">
+                <span class="material-icons">military_tech</span>
+            </div>
+
+            <div>
+                <small>LEVEL 03</small>
+                <h4>Gold Player</h4>
+                <p>Reach the next level to unlock even more exclusive rewards.</p>
+                <strong>3,000 Points</strong>
+            </div>
+
+            <span class="material-icons client-reward-lock">lock</span>
+        </div>
+
+    </div>
+
+
+    <!-- Ways To Earn -->
+    <div class="client-rewards-earn">
+
+        <div class="client-rewards-section-heading">
+            <div>
+                <small>EARN MORE POINTS</small>
+                <h3>Simple Ways to Grow Your Rewards</h3>
+            </div>
+
+            <span class="material-icons">trending_up</span>
+        </div>
+
+
+        <div class="client-rewards-earn-grid">
+
+            <div class="client-rewards-earn-card">
+                <span class="material-icons">shopping_bag</span>
+                <div>
+                    <h4>Shop & Earn</h4>
+                    <p>
+                        Earn reward points when you complete
+                        eligible purchases.
+                    </p>
+                    <strong>+10 Points</strong>
+                </div>
+            </div>
+
+
+            <div class="client-rewards-earn-card">
+                <span class="material-icons">rate_review</span>
+                <div>
+                    <h4>Share Your Feedback</h4>
+                    <p>
+                        Share your experience and collect
+                        additional reward points.
+                    </p>
+                    <strong>+50 Points</strong>
+                </div>
+            </div>
+
+
+            <div class="client-rewards-earn-card">
+                <span class="material-icons">favorite</span>
+                <div>
+                    <h4>Stay Connected</h4>
+                    <p>
+                        Keep exploring Stackly and discover
+                        new ways to earn rewards.
+                    </p>
+                    <strong>+25 Points</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Reward Benefits -->
+    <div class="client-rewards-benefits">
+
+        <div class="client-reward-benefit">
+            <span class="material-icons">local_offer</span>
+            <div>
+                <h4>Exclusive Offers</h4>
+                <p>
+                    Get access to special offers available
+                    for Stackly rewards members.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="client-reward-benefit">
+            <span class="material-icons">savings</span>
+            <div>
+                <h4>More Savings</h4>
+                <p>
+                    Use your accumulated points to enjoy
+                    valuable rewards and savings.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="client-reward-benefit">
+            <span class="material-icons">card_giftcard</span>
+            <div>
+                <h4>Special Rewards</h4>
+                <p>
+                    Unlock exciting rewards as you move
+                    through higher membership levels.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SUPPORT
+            ================================================== -->
+
+            <section
+                class="dashboard-page"
+                id="support">
+
+                <div class="dashboard-page-heading">
+
+                    <div>
+
+                        <span>
+                            HELP CENTER
+                        </span>
+
+                        <h2>
+                            Support Center
+                        </h2>
+
+                        <p>
+                            Need help with an order or Stackly product?
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="support-grid">
+
+
+                    <div class="support-card">
+
+                        <div class="support-icon">
+                            <span class="material-icons">
+                                shopping_bag
+                            </span>
+                        </div>
+
+                        <h3>
+                            Order Support
+                        </h3>
+
+                        <p>
+                            Get help with orders, delivery updates
+                            and product information.
+                        </p>
+
+                        <a href="404.html">
+                            Contact Support
+                        </a>
+
+                    </div>
+
+
+                    <div class="support-card">
+
+                        <div class="support-icon">
+                            <span class="material-icons">
+                                help_outline
+                            </span>
+                        </div>
+
+                        <h3>
+                            Frequently Asked Questions
+                        </h3>
+
+                        <p>
+                            Find answers to common questions about
+                            Stackly Toys & Games.
+                        </p>
+
+                        <a href="404.html">
+                            View FAQs
+                        </a>
+
+                    </div>
+
+
+                    <div class="support-card">
+
+                        <div class="support-icon">
+                            <span class="material-icons">
+                                support_agent
+                            </span>
+                        </div>
+
+                        <h3>
+                            Talk to Stackly
+                        </h3>
+
+                        <p>
+                            Our support team is available to help
+                            with your Stackly experience.
+                        </p>
+
+                        <a href="404.html">
+                            Get Help
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="support-bottom">
+
+                    <span class="material-icons">
+                        verified
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Stackly Customer Care
+                        </strong>
+
+                        <p>
+                            We're here to make your shopping
+                            experience simple and enjoyable.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/client-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2000 @@
+/* =========================================================
+   STACKLY BLOG HERO
+========================================================= */
+
+.stackly-blog-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-image:
+        url("../assets/kids-playing.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* OVERLAY */
+
+.stackly-blog-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(29,43,82,.94),
+            rgba(29,43,82,.78),
+            rgba(18,62,53,.72)
+        );
+
+    z-index: 1;
+}
+
+
+/* CONTENT */
+
+.stackly-blog-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 950px;
+
+    padding: 80px 25px;
+
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* LABEL */
+
+.stackly-blog-hero-label {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 9px 19px;
+
+    border-radius: 30px;
+
+    background: rgba(201,255,145,.13);
+
+    border: 1px solid
+        rgba(201,255,145,.35);
+
+    color: #c9ff91;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.stackly-blog-hero-label
+.material-icons {
+    font-size: 17px;
+}
+
+
+/* HEADING */
+
+.stackly-blog-hero-content h1 {
+    max-width: 900px;
+
+    margin: 22px auto 0;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(45px, 6vw, 76px);
+
+    font-weight: 700;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+.stackly-blog-hero-content h1 span {
+    color: #16a34a;
+}
+
+
+/* DESCRIPTION */
+
+.stackly-blog-hero-content p {
+    max-width: 700px;
+
+    margin: 22px auto 0;
+
+    color: rgba(255,255,255,.82);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* BREADCRUMB */
+
+.stackly-blog-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.stackly-blog-breadcrumb a {
+    color: #c9ff91;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.stackly-blog-breadcrumb strong {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+}
+
+.stackly-blog-breadcrumb
+.material-icons {
+    color: #c9ff91;
+
+    font-size: 19px;
+}
+
+
+/* DOT */
+
+.stackly-blog-hero-dot {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 30px auto 0;
+
+    border: 2px solid
+        rgba(201,255,145,.65);
+
+    border-radius: 50%;
+}
+
+.stackly-blog-hero-dot span {
+    width: 10px;
+    height: 10px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #c9ff91;
+
+    box-shadow:
+        0 0 15px
+        rgba(201,255,145,.8);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .stackly-blog-hero {
+        min-height: 500px;
+
+        background-position: center;
+    }
+
+    .stackly-blog-hero-content {
+        padding: 75px 18px;
+    }
+
+    .stackly-blog-hero-content h1 {
+        max-width: 360px;
+
+        margin-top: 18px;
+
+        font-size: 38px;
+
+        line-height: 1.15;
+
+        letter-spacing: -.5px;
+    }
+
+    .stackly-blog-hero-content p {
+        max-width: 340px;
+
+        margin-top: 18px;
+
+        font-size: 12.5px;
+
+        line-height: 1.7;
+    }
+
+    .stackly-blog-hero-label {
+        font-size: 9px;
+
+        padding: 8px 15px;
+    }
+
+    .stackly-blog-breadcrumb {
+        margin-top: 20px;
+    }
+
+    .stackly-blog-breadcrumb a,
+    .stackly-blog-breadcrumb strong {
+        font-size: 12px;
+    }
+
+    .stackly-blog-hero-dot {
+        width: 42px;
+        height: 42px;
+
+        margin-top: 25px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .stackly-blog-hero {
+        min-height: 470px;
+    }
+
+    .stackly-blog-hero-content h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY BLOG FEATURE
+========================================================= */
+
+.stackly-blog-feature {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 105px 0;
+
+    background: #ffffff;
+}
+
+.stackly-blog-feature-container {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.stackly-blog-feature-visual {
+    position: relative;
+
+    min-height: 570px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.stackly-blog-feature-main {
+    position: relative;
+
+    width: 82%;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(29,43,82,.13);
+}
+
+.stackly-blog-feature-main img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* SMALL IMAGE */
+
+.stackly-blog-feature-small {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 47%;
+    height: 260px;
+
+    overflow: hidden;
+
+    border: 8px solid #ffffff;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 45px
+        rgba(29,43,82,.18);
+}
+
+.stackly-blog-feature-small img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.stackly-blog-feature-content {
+    max-width: 580px;
+}
+
+.stackly-blog-feature-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 16px;
+
+    border-radius: 25px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font: 700 11px "Poppins", sans-serif;
+
+    letter-spacing: 1.2px;
+}
+
+.stackly-blog-feature-label
+.material-icons {
+    font-size: 17px;
+}
+
+.stackly-blog-feature-content h2 {
+    margin: 20px 0 0;
+
+    color: #1d2b52;
+
+    font: 700 clamp(38px, 4.2vw, 56px)
+        "Poppins", sans-serif;
+
+    line-height: 1.14;
+
+    letter-spacing: -1px;
+}
+
+.stackly-blog-feature-content h2 span {
+    color: #16a34a;
+}
+
+.stackly-blog-feature-intro {
+    margin: 20px 0 0;
+
+    color: #64748b;
+
+    font: 14px/1.85 "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   POINTS
+========================================================= */
+
+.stackly-blog-feature-points {
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.stackly-blog-feature-point {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+.stackly-blog-feature-point
+> .material-icons {
+    flex-shrink: 0;
+
+    width: 47px;
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-size: 22px;
+}
+
+.stackly-blog-feature-point h3 {
+    margin: 0;
+
+    color: #1d2b52;
+
+    font: 700 16px "Poppins", sans-serif;
+}
+
+.stackly-blog-feature-point p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font: 12px/1.65 "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.stackly-blog-feature-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 28px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e5eaf0;
+}
+
+.stackly-blog-feature-meta > span {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #64748b;
+
+    font: 600 11px "Poppins", sans-serif;
+}
+
+.stackly-blog-feature-meta
+.material-icons {
+    color: #16a34a;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.stackly-blog-feature-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 28px;
+
+    min-height: 49px;
+
+    padding: 0 23px;
+
+    border-radius: 27px;
+
+    background: #1d2b52;
+
+    color: #ffffff;
+
+    font: 700 12px "Poppins", sans-serif;
+
+    text-decoration: none;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.stackly-blog-feature-button
+.material-icons {
+    font-size: 18px;
+}
+
+.stackly-blog-feature-button:hover {
+    background: #16a34a;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .stackly-blog-feature-container {
+        grid-template-columns: 1fr;
+
+        max-width: 750px;
+
+        gap: 60px;
+    }
+
+    .stackly-blog-feature-visual {
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: auto;
+    }
+
+    .stackly-blog-feature-content {
+        max-width: 650px;
+
+        margin: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .stackly-blog-feature {
+        padding: 70px 0;
+    }
+
+    .stackly-blog-feature-container {
+        padding: 0 17px;
+
+        gap: 55px;
+    }
+
+    .stackly-blog-feature-visual {
+        min-height: 390px;
+
+        width: 100%;
+    }
+
+    .stackly-blog-feature-main {
+        width: 84%;
+        height: 330px;
+
+        border-radius: 21px;
+    }
+
+    .stackly-blog-feature-small {
+        width: 48%;
+        height: 175px;
+
+        border-width: 6px;
+
+        border-radius: 18px;
+    }
+
+    .stackly-blog-feature-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .stackly-blog-feature-label {
+        font-size: 9px;
+    }
+
+    .stackly-blog-feature-content h2 {
+        font-size: 32px;
+
+        line-height: 1.18;
+    }
+
+    .stackly-blog-feature-intro {
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+    .stackly-blog-feature-points {
+        text-align: left;
+
+        gap: 18px;
+    }
+
+    .stackly-blog-feature-point
+    > .material-icons {
+        width: 43px;
+        height: 43px;
+
+        font-size: 20px;
+    }
+
+    .stackly-blog-feature-point h3 {
+        font-size: 13px;
+    }
+
+    .stackly-blog-feature-point p {
+        font-size: 10px;
+    }
+
+    .stackly-blog-feature-meta {
+        justify-content: center;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .stackly-blog-feature-button {
+        margin-top: 24px;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .stackly-blog-feature-visual {
+        min-height: 350px;
+    }
+
+    .stackly-blog-feature-main {
+        height: 295px;
+    }
+
+    .stackly-blog-feature-small {
+        height: 155px;
+    }
+
+    .stackly-blog-feature-content h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY LATEST ARTICLES
+========================================================= */
+
+.stackly-articles-section {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background: #f5f9ef;
+}
+
+.stackly-articles-heading {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+
+/* LABEL */
+
+.stackly-articles-label {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font: 700 11px "Poppins", sans-serif;
+
+    letter-spacing: 1.3px;
+}
+
+.stackly-articles-label .material-icons {
+    font-size: 17px;
+}
+
+
+/* HEADING */
+
+.stackly-articles-heading h2 {
+    margin: 20px 0 0;
+
+    color: #1d2b52;
+
+    font: 700 clamp(38px, 5vw, 55px)
+        "Poppins", sans-serif;
+
+    line-height: 1.15;
+}
+
+.stackly-articles-heading h2 span {
+    color: #16a34a;
+}
+
+
+/* LINE */
+
+.stackly-articles-line {
+    width: 80px;
+    height: 5px;
+
+    margin: 20px auto 0;
+
+    border-radius: 10px;
+
+    background: #f59e0b;
+}
+
+
+/* DESCRIPTION */
+
+.stackly-articles-heading p {
+    max-width: 650px;
+
+    margin: 20px auto 0;
+
+    color: #718096;
+
+    font: 13px/1.8 "Poppins", sans-serif;
+}
+
+
+/* GRID */
+
+.stackly-articles-grid {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 60px auto 0;
+
+    padding: 0 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.stackly-article-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(29,43,82,.08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.stackly-article-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 22px 45px
+        rgba(29,43,82,.14);
+}
+
+
+/* IMAGE */
+
+.stackly-article-image {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    overflow: hidden;
+}
+
+.stackly-article-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .6s ease;
+}
+
+.stackly-article-card:hover
+.stackly-article-image img {
+    transform: scale(1.07);
+}
+
+
+/* CATEGORY */
+
+.stackly-article-category {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    padding: 9px 17px;
+
+    border-radius: 25px;
+
+    background: #c9ff91;
+
+    color: #1d2b52;
+
+    font: 700 10px "Poppins", sans-serif;
+}
+
+
+/* CONTENT */
+
+.stackly-article-content {
+    padding: 24px 24px 28px;
+}
+
+
+/* META */
+
+.stackly-article-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    color: #7c8ba6;
+
+    font: 11px "Poppins", sans-serif;
+}
+
+.stackly-article-meta span {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.stackly-article-meta .material-icons {
+    color: #16a34a;
+
+    font-size: 16px;
+}
+
+
+/* TITLE */
+
+.stackly-article-content h3 {
+    margin: 18px 0 0;
+
+    color: #1d2b52;
+
+    font: 700 17px/1.45 "Poppins", sans-serif;
+}
+
+
+/* TEXT */
+
+.stackly-article-content p {
+    margin: 12px 0 0;
+
+    color: #718096;
+
+    font: 12px/1.8 "Poppins", sans-serif;
+}
+
+
+/* LINK */
+
+.stackly-article-content a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 20px;
+
+    color: #16a34a;
+
+    font: 700 12px "Poppins", sans-serif;
+
+    text-decoration: none;
+
+    transition: gap .3s ease;
+}
+
+.stackly-article-content a:hover {
+    gap: 10px;
+}
+
+.stackly-article-content a .material-icons {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .stackly-articles-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 800px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .stackly-articles-section {
+        padding: 70px 0;
+    }
+
+    .stackly-articles-heading {
+        padding: 0 17px;
+    }
+
+    .stackly-articles-heading h2 {
+        font-size: 32px;
+    }
+
+    .stackly-articles-heading p {
+        font-size: 11px;
+    }
+
+    .stackly-articles-grid {
+        grid-template-columns: 1fr;
+
+        padding: 0 17px;
+
+        margin-top: 45px;
+
+        gap: 25px;
+    }
+
+    .stackly-article-image {
+        height: 220px;
+    }
+
+    .stackly-article-content {
+        padding: 21px;
+    }
+
+    .stackly-article-content h3 {
+        font-size: 16px;
+    }
+
+    .stackly-article-content p {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY EXPANDING PLAY STORIES
+========================================================= */
+
+.stackly-play-stories {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background: #ffffff;
+}
+
+
+/* HEADING */
+
+.stackly-play-stories-heading {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 55px;
+
+    padding: 0 20px;
+}
+
+.stackly-play-stories-label {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font: 700 10px "Poppins", sans-serif;
+
+    letter-spacing: 1.3px;
+}
+
+.stackly-play-stories-label .material-icons {
+    font-size: 17px;
+}
+
+.stackly-play-stories-heading h2 {
+    margin: 18px 0 0;
+
+    color: #1d2b52;
+
+    font: 700 clamp(38px, 5vw, 55px)
+        "Poppins", sans-serif;
+
+    line-height: 1.15;
+}
+
+.stackly-play-stories-heading h2 span {
+    color: #16a34a;
+}
+
+.stackly-play-stories-heading p {
+    margin: 16px auto 0;
+
+    color: #718096;
+
+    font: 13px/1.8 "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.stackly-expand-gallery {
+    width: 100%;
+    max-width: 1400px;
+
+    height: 520px;
+
+    margin: 0 auto;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    gap: 10px;
+
+    overflow: hidden;
+}
+
+
+/* ITEM */
+
+.stackly-expand-item {
+    position: relative;
+
+    min-width: 0;
+
+    flex: 1;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        flex .7s cubic-bezier(.22,1,.36,1);
+}
+
+
+/* ACTIVE / HOVER */
+
+.stackly-expand-item:hover,
+.stackly-expand-item.active {
+    flex: 2.7;
+}
+
+
+/* IMAGE */
+
+.stackly-expand-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(.22,1,.36,1);
+}
+
+.stackly-expand-item:hover img,
+.stackly-expand-item.active img {
+    transform: scale(1.06);
+}
+
+
+/* OVERLAY */
+
+.stackly-expand-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(12,28,27,.88) 0%,
+            rgba(12,28,27,.35) 45%,
+            rgba(12,28,27,.05) 75%
+        );
+
+    opacity: .35;
+
+    transition:
+        opacity .5s ease;
+}
+
+.stackly-expand-item:hover
+.stackly-expand-overlay,
+.stackly-expand-item.active
+.stackly-expand-overlay {
+    opacity: 1;
+}
+
+
+/* CONTENT */
+
+.stackly-expand-content {
+    position: absolute;
+
+    left: 28px;
+    right: 25px;
+    bottom: 27px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 15px;
+
+    color: #ffffff;
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity .45s ease .15s,
+        transform .55s ease .1s;
+}
+
+.stackly-expand-item:hover
+.stackly-expand-content,
+.stackly-expand-item.active
+.stackly-expand-content {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ICON */
+
+.stackly-expand-content > .material-icons {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #c9ff91;
+
+    color: #1d2b52;
+
+    font-size: 22px;
+}
+
+
+/* TEXT */
+
+.stackly-expand-content small {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #c9ff91;
+
+    font: 700 9px "Poppins", sans-serif;
+
+    letter-spacing: 1.4px;
+}
+
+.stackly-expand-content h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font: 700 24px "Poppins", sans-serif;
+}
+
+.stackly-expand-content p {
+    max-width: 390px;
+
+    margin: 5px 0 0;
+
+    color: rgba(255,255,255,.82);
+
+    font: 11px/1.6 "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   GSAP INITIAL STATE SUPPORT
+========================================================= */
+
+.stackly-expand-gallery {
+    visibility: visible;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .stackly-expand-gallery {
+        height: 450px;
+
+        padding: 0 18px;
+    }
+
+    .stackly-expand-item:hover,
+    .stackly-expand-item.active {
+        flex: 2.2;
+    }
+
+    .stackly-expand-content {
+        left: 20px;
+        right: 18px;
+        bottom: 20px;
+    }
+
+    .stackly-expand-content h3 {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+@media (max-width: 650px) {
+
+    .stackly-play-stories {
+        padding: 70px 0;
+    }
+
+    .stackly-play-stories-heading {
+        margin-bottom: 35px;
+        padding: 0 18px;
+        text-align: center;
+    }
+
+    .stackly-play-stories-heading h2 {
+        font-size: 32px;
+    }
+
+    .stackly-play-stories-heading p {
+        font-size: 11px;
+    }
+
+    /* ONE BELOW ANOTHER */
+    .stackly-expand-gallery {
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+        overflow: visible;
+    }
+
+    .stackly-expand-item {
+        width: 100%;
+        min-width: 100%;
+        height: 105px;
+
+        flex: none;
+
+        border-radius: 18px;
+
+        overflow: hidden;
+
+        transition:
+            height .65s cubic-bezier(.22,1,.36,1);
+    }
+
+    /* ACTIVE IMAGE BECOMES BIGGER */
+    .stackly-expand-item.active {
+        width: 100%;
+        height: 300px;
+
+        flex: none;
+    }
+
+    /* Disable desktop hover expansion */
+    .stackly-expand-item:hover {
+        flex: none;
+        height: 105px;
+    }
+
+    .stackly-expand-item.active:hover {
+        height: 300px;
+    }
+
+    .stackly-expand-item img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        transform: scale(1);
+    }
+
+    .stackly-expand-item.active img {
+        transform: scale(1.03);
+    }
+
+    /* OVERLAY */
+    .stackly-expand-overlay {
+        opacity: .45;
+    }
+
+    .stackly-expand-item.active .stackly-expand-overlay {
+        opacity: 1;
+    }
+
+    /* CONTENT */
+    .stackly-expand-content {
+        left: 18px;
+        right: 15px;
+        bottom: 18px;
+
+        gap: 10px;
+
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .stackly-expand-item.active .stackly-expand-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .stackly-expand-content > .material-icons {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+
+        border-radius: 11px;
+
+        font-size: 19px;
+    }
+
+    .stackly-expand-content h3 {
+        font-size: 17px;
+    }
+
+    .stackly-expand-content p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .stackly-expand-content small {
+        font-size: 11px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .stackly-expand-gallery {
+        height: 430px;
+
+        padding: 0 10px;
+    }
+
+    .stackly-expand-content h3 {
+        font-size: 15px;
+    }
+
+    .stackly-expand-content p {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY QUESTIONS SECTION
+========================================================= */
+
+.stackly-questions-section {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background: #f5f9ef;
+}
+
+.stackly-questions-container {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 0 25px;
+
+    display: grid;
+
+    grid-template-columns: 48% 52%;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.stackly-questions-visual {
+    position: relative;
+
+    width: 100%;
+}
+
+.stackly-questions-image {
+    position: relative;
+
+    width: 100%;
+    height: 560px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 55px rgba(29,43,82,.13);
+}
+
+.stackly-questions-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -70px;
+    left: -70px;
+
+    border-radius: 50%;
+
+    background: #c9ff91;
+
+    opacity: .7;
+
+    z-index: 0;
+}
+
+.stackly-questions-image img {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    z-index: 1;
+}
+
+
+/* IMAGE BADGE */
+
+.stackly-questions-image-badge {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 18px;
+
+    background: rgba(255,255,255,.94);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.15);
+}
+
+.stackly-questions-image-badge > .material-icons {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #c9ff91;
+
+    color: #1d2b52;
+
+    font-size: 21px;
+}
+
+.stackly-questions-image-badge strong {
+    display: block;
+
+    color: #1d2b52;
+
+    font: 700 12px "Poppins", sans-serif;
+}
+
+.stackly-questions-image-badge small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #718096;
+
+    font: 9px "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.stackly-questions-content {
+    width: 100%;
+}
+
+.stackly-questions-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 9px 17px;
+
+    border-radius: 30px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font: 700 10px "Poppins", sans-serif;
+
+    letter-spacing: 1.2px;
+}
+
+.stackly-questions-label .material-icons {
+    font-size: 17px;
+}
+
+.stackly-questions-content h2 {
+    margin: 20px 0 0;
+
+    color: #1d2b52;
+
+    font: 700 clamp(36px, 4vw, 52px)
+        "Poppins", sans-serif;
+
+    line-height: 1.15;
+}
+
+.stackly-questions-content h2 span {
+    color: #16a34a;
+}
+
+.stackly-questions-intro {
+    max-width: 600px;
+
+    margin: 17px 0 25px;
+
+    color: #718096;
+
+    font: 13px/1.8 "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.stackly-question-item {
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #e3eadf;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    transition:
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.stackly-question-item.active {
+    border-color: #b9e88a;
+
+    box-shadow:
+        0 8px 25px rgba(29,43,82,.06);
+}
+
+.stackly-question-btn {
+    width: 100%;
+
+    min-height: 60px;
+
+    padding: 16px 18px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    cursor: pointer;
+
+    color: #1d2b52;
+
+    text-align: left;
+
+    font: 600 12px "Poppins", sans-serif;
+}
+
+.stackly-question-btn .material-icons {
+    flex-shrink: 0;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-size: 19px;
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+}
+
+.stackly-question-item.active
+.stackly-question-btn .material-icons {
+    transform: rotate(180deg);
+
+    background: #16a34a;
+
+    color: #ffffff;
+}
+
+
+/* ANSWER */
+
+.stackly-question-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height .4s ease;
+}
+
+.stackly-question-answer p {
+    margin: 0;
+
+    padding: 0 18px 17px;
+
+    color: #718096;
+
+    font: 11px/1.7 "Poppins", sans-serif;
+}
+
+.stackly-question-item.active
+.stackly-question-answer {
+    max-height: 150px;
+}
+
+
+/* BUTTON */
+
+.stackly-questions-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    padding: 13px 22px;
+
+    border-radius: 30px;
+
+    background: #16a34a;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font: 600 11px "Poppins", sans-serif;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.stackly-questions-button:hover {
+    background: #0d7f38;
+
+    transform: translateY(-3px);
+}
+
+.stackly-questions-button .material-icons {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .stackly-questions-section {
+        padding: 70px 0;
+    }
+
+    .stackly-questions-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 0 17px;
+
+        text-align: center;
+    }
+
+    .stackly-questions-image {
+        height: 380px;
+
+        border-radius: 22px;
+    }
+
+    .stackly-questions-image-badge {
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: max-content;
+
+        max-width: calc(100% - 30px);
+
+        text-align: left;
+    }
+
+    .stackly-questions-content {
+        text-align: center;
+    }
+
+    .stackly-questions-label {
+        justify-content: center;
+    }
+
+    .stackly-questions-content h2 {
+        font-size: 32px;
+    }
+
+    .stackly-questions-intro {
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 11px;
+    }
+
+    .stackly-question-btn {
+        text-align: left;
+
+        font-size: 11px;
+    }
+
+    .stackly-questions-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .stackly-questions-image {
+        height: 330px;
+    }
+
+    .stackly-questions-content h2 {
+        font-size: 29px;
+    }
+
+    .stackly-questions-image-badge {
+        padding: 10px 13px;
+    }
+
+}

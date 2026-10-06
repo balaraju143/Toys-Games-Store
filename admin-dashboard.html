@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly Toys & Games | Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+
+<body>
+
+<div class="stackly-admin-dashboard">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="stackly-admin-sidebar" id="adminSidebar">
+
+        <div class="stackly-admin-sidebar-top">
+
+            <a href="#overview" class="stackly-admin-logo">
+                <img src="assets/green-stackly-logo.webp" alt="Stackly Toys & Games">
+            </a>
+
+            <!-- ADMIN USER -->
+
+            <div class="stackly-admin-user">
+
+                <div class="stackly-admin-avatar" id="sidebarAdminAvatar">
+                    A
+                </div>
+
+                <div class="stackly-admin-user-info">
+
+                    <strong id="sidebarAdminName">
+                        Admin User
+                    </strong>
+
+                    <span id="sidebarAdminEmail">
+                        admin@stackly.com
+                    </span>
+
+                    <small>ADMIN</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="stackly-admin-menu-title">
+                STORE MANAGEMENT
+            </div>
+
+
+            <!-- ADMIN MENU -->
+
+            <nav class="stackly-admin-menu">
+
+                <a href="#overview"
+                   class="admin-menu-link active">
+
+                    <span class="material-icons">
+                        dashboard
+                    </span>
+
+                    <span>Overview</span>
+
+                </a>
+
+
+                <a href="#products"
+                   class="admin-menu-link">
+
+                    <span class="material-icons">
+                        inventory_2
+                    </span>
+
+                    <span>Products</span>
+
+                    <small>48</small>
+
+                </a>
+
+
+                <a href="#orders"
+                   class="admin-menu-link">
+
+                    <span class="material-icons">
+                        shopping_bag
+                    </span>
+
+                    <span>Orders</span>
+
+                    <small>12</small>
+
+                </a>
+
+                <a href="#promotions"
+                   class="admin-menu-link">
+
+                    <span class="material-icons">
+                        local_offer
+                    </span>
+
+                    <span>Promotions</span>
+
+                </a>
+
+
+                <a href="#analytics"
+                   class="admin-menu-link">
+
+                    <span class="material-icons">
+                        analytics
+                    </span>
+
+                    <span>Analytics</span>
+
+                </a>
+
+
+                <a href="#support"
+                   class="admin-menu-link">
+
+                    <span class="material-icons">
+                        support_agent
+                    </span>
+
+                    <span>Support</span>
+
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="stackly-admin-sidebar-bottom">
+
+            <a href="login.html" class="admin-logout">
+
+                <span class="material-icons">
+                    logout
+                </span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+
+    <div class="stackly-admin-overlay"
+         id="adminSidebarOverlay">
+    </div>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="stackly-admin-main">
+
+
+        <!-- HEADER -->
+
+        <header class="stackly-admin-header">
+
+            <div class="stackly-admin-header-left">
+
+                <button type="button"
+                        class="stackly-admin-toggle"
+                        id="adminDashboardToggle">
+
+                    <span class="material-icons">
+                        menu
+                    </span>
+
+                </button>
+
+
+                <div class="stackly-admin-heading">
+
+                    <h1 id="adminPageTitle">
+                        Overview
+                    </h1>
+
+                    <p id="adminPageSubtitle">
+                        Manage your Stackly Toys & Games store.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stackly-admin-header-right">
+
+
+                <!-- SEARCH -->
+
+                <button type="button"
+                        class="stackly-admin-search"
+                        id="adminDashboardSearch">
+
+                    <span class="material-icons">
+                        search
+                    </span>
+
+                    <span>
+                        Search products, orders...
+                    </span>
+
+                </button>
+
+
+                <!-- USER -->
+
+                <div class="stackly-admin-header-user">
+
+                    <span class="stackly-admin-header-avatar"
+                          id="headerAdminAvatar">
+                        A
+                    </span>
+
+                    <div class="stackly-admin-header-user-info">
+
+                        <strong id="headerAdminName">
+                            Admin User
+                        </strong>
+
+                        <span id="headerAdminEmail">
+                            admin@stackly.com
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             CONTENT
+        ====================================================== -->
+
+        <div class="stackly-admin-content">
+
+
+            <!-- =================================================
+                 OVERVIEW
+            ================================================== -->
+
+            <section class="admin-page active-admin-page"
+                     id="overview">
+
+
+                <!-- TOP WELCOME -->
+
+                <div class="admin-overview-hero">
+
+                    <div class="admin-overview-hero-content">
+
+                        <span class="admin-overview-label">
+                            STACKLY STORE ADMIN
+                        </span>
+
+                        <h2>
+                            Welcome back,
+                            <strong id="welcomeAdminName">
+                                Admin
+                            </strong>
+                        </h2>
+
+                        <p>
+                            Monitor your toy store, manage products,
+                            track orders and keep your customers happy.
+                        </p>
+
+                        <div class="admin-hero-buttons">
+
+                            <a href="#products"
+                               class="admin-main-btn">
+                                Manage Products
+                            </a>
+
+                            <a href="#orders"
+                               class="admin-outline-btn">
+                                Check Orders
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-overview-visual">
+
+                        <div class="admin-floating-box admin-box-one">
+
+                            <span class="material-icons">
+                                trending_up
+                            </span>
+
+                            <div>
+                                <strong>18.6%</strong>
+                                <small>Sales Growth</small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="admin-dashboard-product">
+
+                            <img src="assets/kids-playing.webp"
+                                 alt="Stackly Game Set">
+
+                        </div>
+
+
+                        <div class="admin-floating-box admin-box-two">
+
+                            <span class="material-icons">
+                                verified
+                            </span>
+
+                            <div>
+                                <strong>98%</strong>
+                                <small>Store Rating</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STAT CARDS -->
+
+                <div class="admin-stat-grid">
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-top">
+
+                            <span class="material-icons">
+                                payments
+                            </span>
+
+                            <small>
+                                +18.6%
+                            </small>
+
+                        </div>
+
+                        <span class="admin-stat-label">
+                            TOTAL SALES
+                        </span>
+
+                        <strong>
+                            ₹8,42,580
+                        </strong>
+
+                        <p>
+                            Store revenue
+                        </p>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-top">
+
+                            <span class="material-icons">
+                                shopping_bag
+                            </span>
+
+                            <small>
+                                +12.4%
+                            </small>
+
+                        </div>
+
+                        <span class="admin-stat-label">
+                            TOTAL ORDERS
+                        </span>
+
+                        <strong>
+                            1,248
+                        </strong>
+
+                        <p>
+                            Successful purchases
+                        </p>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-top">
+
+                            <span class="material-icons">
+                                groups
+                            </span>
+
+                            <small>
+                                +9.8%
+                            </small>
+
+                        </div>
+
+                        <span class="admin-stat-label">
+                            CUSTOMERS
+                        </span>
+
+                        <strong>
+                            1,204
+                        </strong>
+
+                        <p>
+                            Active customers
+                        </p>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-top">
+
+                            <span class="material-icons">
+                                inventory_2
+                            </span>
+
+                            <small class="warning">
+                                7 Low
+                            </small>
+
+                        </div>
+
+                        <span class="admin-stat-label">
+                            PRODUCTS
+                        </span>
+
+                        <strong>
+                            148
+                        </strong>
+
+                        <p>
+                            Active products
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SALES + TOP PRODUCTS -->
+
+                <div class="admin-overview-grid">
+
+
+                    <div class="admin-panel admin-sales-panel">
+
+                        <div class="admin-panel-heading">
+
+                            <div>
+                                <span>STORE PERFORMANCE</span>
+
+                                <h3>
+                                    Sales Overview
+                                </h3>
+                            </div>
+
+                            <a href="#analytics">
+                                View Analytics
+                            </a>
+
+                        </div>
+
+
+                        <div class="admin-sales-chart">
+
+                            <div class="chart-y-label">
+                                ₹
+                            </div>
+
+                            <div class="admin-bars">
+
+                                <div class="admin-bar-item">
+                                    <div class="admin-bar"
+                                         style="height:45%;">
+                                    </div>
+                                    <small>Mon</small>
+                                </div>
+
+                                <div class="admin-bar-item">
+                                    <div class="admin-bar"
+                                         style="height:65%;">
+                                    </div>
+                                    <small>Tue</small>
+                                </div>
+
+                                <div class="admin-bar-item">
+                                    <div class="admin-bar"
+                                         style="height:52%;">
+                                    </div>
+                                    <small>Wed</small>
+                                </div>
+
+                                <div class="admin-bar-item">
+                                    <div class="admin-bar"
+                                         style="height:78%;">
+                                    </div>
+                                    <small>Thu</small>
+                                </div>
+
+                                <div class="admin-bar-item">
+                                    <div class="admin-bar"
+                                         style="height:62%;">
+                                    </div>
+                                    <small>Fri</small>
+                                </div>
+
+                                <div class="admin-bar-item">
+                                    <div class="admin-bar active"
+                                         style="height:90%;">
+                                    </div>
+                                    <small>Sat</small>
+                                </div>
+
+                                <div class="admin-bar-item">
+                                    <div class="admin-bar"
+                                         style="height:72%;">
+                                    </div>
+                                    <small>Sun</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-panel admin-top-products">
+
+                        <div class="admin-panel-heading">
+
+                            <div>
+                                <span>BEST SELLERS</span>
+
+                                <h3>
+                                    Top Products
+                                </h3>
+                            </div>
+
+                            <a href="#products">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <div class="admin-top-product">
+
+                            <img src="assets/robot-toy.webp"
+                                 alt="Robot Toy">
+
+                            <div>
+                                <strong>
+                                    Smart Robot Toy
+                                </strong>
+
+                                <small>
+                                    182 sold
+                                </small>
+                            </div>
+
+                            <b>
+                                ₹1,299
+                            </b>
+
+                        </div>
+
+
+                        <div class="admin-top-product">
+
+                            <img src="assets/Building Joyful Toy Creations.webp"
+                                 alt="Game Set">
+
+                            <div>
+                                <strong>
+                                    Family Game Set
+                                </strong>
+
+                                <small>
+                                    156 sold
+                                </small>
+                            </div>
+
+                            <b>
+                                ₹1,499
+                            </b>
+
+                        </div>
+
+
+                        <div class="admin-top-product">
+
+                            <img src="assets/car1.webp"
+                                 alt="Racing Car">
+
+                            <div>
+                                <strong>
+                                    Racing Car
+                                </strong>
+
+                                <small>
+                                    128 sold
+                                </small>
+                            </div>
+
+                            <b>
+                                ₹799
+                            </b>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVITY -->
+
+                <div class="admin-panel admin-activity-panel">
+
+                    <div class="admin-panel-heading">
+
+                        <div>
+                            <span>STORE ACTIVITY</span>
+
+                            <h3>
+                                Recent Updates
+                            </h3>
+                        </div>
+
+                        <a href="#analytics">
+                            View Report
+                        </a>
+
+                    </div>
+
+
+                    <div class="admin-activity-grid">
+
+
+                        <div class="admin-activity-card">
+
+                            <span class="material-icons">
+                                shopping_bag
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    24 new orders
+                                </strong>
+
+                                <p>
+                                    Orders are waiting for processing.
+                                </p>
+
+                            </div>
+
+                            <a href="#orders">
+                                Manage
+                            </a>
+
+                        </div>
+
+
+                        <div class="admin-activity-card">
+
+                            <span class="material-icons">
+                                inventory_2
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    7 products low in stock
+                                </strong>
+
+                                <p>
+                                    Restock these products soon.
+                                </p>
+
+                            </div>
+
+                            <a href="#inventory">
+                                Review
+                            </a>
+
+                        </div>
+
+
+                        <div class="admin-activity-card">
+
+                            <span class="material-icons">
+                                rate_review
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    18 new reviews
+                                </strong>
+
+                                <p>
+                                    Customers shared new feedback.
+                                </p>
+
+                            </div>
+
+                            <a href="404.html">
+                                Review
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 PRODUCTS
+            ================================================== -->
+
+            <section class="admin-page"
+                     id="products">
+
+                <div class="admin-page-title-row">
+
+                    <div>
+                        <span>CATALOG MANAGEMENT</span>
+
+                        <h2>
+                            Products
+                        </h2>
+
+                        <p>
+                            Manage toys, games, prices and product visibility.
+                        </p>
+                    </div>
+
+                    <a href="404.html"
+                       class="admin-main-btn">
+                        Add Product
+                    </a>
+
+                </div>
+
+
+                <div class="admin-product-summary">
+
+                    <div>
+                        <span class="material-icons">
+                            inventory_2
+                        </span>
+
+                        <div>
+                            <small>
+                                TOTAL PRODUCTS
+                            </small>
+
+                            <strong>
+                                148
+                            </strong>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <span class="material-icons">
+                            check_circle
+                        </span>
+
+                        <div>
+                            <small>
+                                ACTIVE
+                            </small>
+
+                            <strong>
+                                136
+                            </strong>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <span class="material-icons">
+                            visibility_off
+                        </span>
+
+                        <div>
+                            <small>
+                                HIDDEN
+                            </small>
+
+                            <strong>
+                                12
+                            </strong>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <span class="material-icons">
+                            warning
+                        </span>
+
+                        <div>
+                            <small>
+                                LOW STOCK
+                            </small>
+
+                            <strong>
+                                7
+                            </strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="admin-product-grid">
+
+
+                    <div class="admin-product-card">
+
+                        <div class="admin-product-image">
+
+                            <span>
+                                BEST SELLER
+                            </span>
+
+                            <img src="assets/robot-toy.webp"
+                                 alt="Robot Toy">
+
+                        </div>
+
+                        <div class="admin-product-content">
+
+                            <small>
+                                ROBOT TOYS
+                            </small>
+
+                            <h3>
+                                Smart Robot Toy
+                            </h3>
+
+                            <strong>
+                                ₹1,299
+                            </strong>
+
+                            <div class="admin-product-bottom">
+
+                                <span>
+                                    42 in stock
+                                </span>
+
+                                <a href="404.html">
+                                    Manage
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-product-card">
+
+                        <div class="admin-product-image">
+
+                            <span>
+                                POPULAR
+                            </span>
+
+                            <img src="assets/Building Joyful Toy Creations.webp"
+                                 alt="Game Set">
+
+                        </div>
+
+                        <div class="admin-product-content">
+
+                            <small>
+                                BOARD GAMES
+                            </small>
+
+                            <h3>
+                                Family Game Set
+                            </h3>
+
+                            <strong>
+                                ₹1,499
+                            </strong>
+
+                            <div class="admin-product-bottom">
+
+                                <span>
+                                    28 in stock
+                                </span>
+
+                                <a href="404.html">
+                                    Manage
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-product-card">
+
+                        <div class="admin-product-image">
+
+                            <span>
+                                NEW
+                            </span>
+
+                            <img src="assets/car1.webp"
+                                 alt="Green Racing Car">
+
+                        </div>
+
+                        <div class="admin-product-content">
+
+                            <small>
+                                ACTION TOYS
+                            </small>
+
+                            <h3>
+                                Racing Car
+                            </h3>
+
+                            <strong>
+                                ₹799
+                            </strong>
+
+                            <div class="admin-product-bottom">
+
+                                <span>
+                                    18 in stock
+                                </span>
+
+                                <a href="404.html">
+                                    Manage
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-product-card">
+
+                        <div class="admin-product-image">
+
+                            <span>
+                                FEATURED
+                            </span>
+
+                            <img src="assets/dragon-toy.webp"
+                                 alt="Dragon Toy">
+
+                        </div>
+
+                        <div class="admin-product-content">
+
+                            <small>
+                                ADVENTURE TOYS
+                            </small>
+
+                            <h3>
+                                Dragon Adventure
+                            </h3>
+
+                            <strong>
+                                ₹1,299
+                            </strong>
+
+                            <div class="admin-product-bottom">
+
+                                <span>
+                                    35 in stock
+                                </span>
+
+                                <a href="404.html">
+                                    Manage
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- =====================================================
+     ADMIN PRODUCTS - EXTRA CONTENT
+===================================================== -->
+
+<div class="admin-products-extra">
+
+    <!-- Product Management Overview -->
+    <div class="admin-products-overview">
+
+        <div class="admin-products-overview-content">
+
+            <div class="admin-products-overview-icon">
+                <span class="material-icons">inventory_2</span>
+            </div>
+
+            <div>
+                <small>PRODUCT MANAGEMENT</small>
+                <h3>Keep Your Toy Collection Organized</h3>
+                <p>
+                    Manage your products, categories, pricing and
+                    availability from one place. Keep the Stackly
+                    collection updated and ready for customers.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="admin-products-overview-stats">
+
+            <div>
+                <strong>128</strong>
+                <span>Total Products</span>
+            </div>
+
+            <div>
+                <strong>14</strong>
+                <span>Categories</span>
+            </div>
+
+            <div>
+                <strong>112</strong>
+                <span>Active Items</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Product Management Areas -->
+    <div class="admin-product-management">
+
+        <div class="admin-product-management-heading">
+            <div>
+                <small>MANAGEMENT AREAS</small>
+                <h3>Organize Your Product Store</h3>
+            </div>
+
+            <span class="material-icons">dashboard_customize</span>
+        </div>
+
+
+        <div class="admin-product-management-grid">
+
+            <div class="admin-product-management-card">
+
+                <div class="admin-product-card-icon">
+                    <span class="material-icons">category</span>
+                </div>
+
+                <div>
+                    <h4>Product Categories</h4>
+                    <p>
+                        Organize toys and games into clear categories
+                        so customers can easily discover products.
+                    </p>
+                    <strong>14 Categories</strong>
+                </div>
+
+            </div>
+
+
+            <div class="admin-product-management-card">
+
+                <div class="admin-product-card-icon">
+                    <span class="material-icons">sell</span>
+                </div>
+
+                <div>
+                    <h4>Pricing & Offers</h4>
+                    <p>
+                        Manage product prices, discounts and special
+                        offers across your online collection.
+                    </p>
+                    <strong>23 Active Offers</strong>
+                </div>
+
+            </div>
+
+
+            <div class="admin-product-management-card">
+
+                <div class="admin-product-card-icon">
+                    <span class="material-icons">inventory</span>
+                </div>
+
+                <div>
+                    <h4>Stock Availability</h4>
+                    <p>
+                        Monitor available products and keep track
+                        of items that need restocking.
+                    </p>
+                    <strong>16 Low Stock Items</strong>
+                </div>
+
+            </div>
+
+
+            <div class="admin-product-management-card">
+
+                <div class="admin-product-card-icon">
+                    <span class="material-icons">visibility</span>
+                </div>
+
+                <div>
+                    <h4>Store Visibility</h4>
+                    <p>
+                        Control which products are visible to
+                        customers and manage inactive listings.
+                    </p>
+                    <strong>112 Visible Products</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Product Status -->
+    <div class="admin-product-status">
+
+        <div class="admin-product-status-heading">
+
+            <div>
+                <small>PRODUCT STATUS</small>
+                <h3>Current Store Health</h3>
+            </div>
+
+            <span class="material-icons">analytics</span>
+
+        </div>
+
+
+        <div class="admin-product-status-grid">
+
+            <div class="admin-product-status-item">
+                <div class="admin-product-status-number">
+                    <strong>87%</strong>
+                </div>
+
+                <div>
+                    <h4>Products Active</h4>
+                    <p>
+                        Most products in the catalog are currently
+                        available for customers.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="admin-product-status-item">
+                <div class="admin-product-status-number green">
+                    <strong>92%</strong>
+                </div>
+
+                <div>
+                    <h4>Stock Health</h4>
+                    <p>
+                        Product availability is healthy across
+                        most categories.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="admin-product-status-item">
+                <div class="admin-product-status-number light">
+                    <strong>23</strong>
+                </div>
+
+                <div>
+                    <h4>Discounted Products</h4>
+                    <p>
+                        Products currently included in promotional
+                        pricing and special offers.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Product Management Note -->
+    <div class="admin-products-note">
+
+        <div class="admin-products-note-icon">
+            <span class="material-icons">tips_and_updates</span>
+        </div>
+
+        <div>
+            <small>ADMIN TIP</small>
+            <h3>Keep Product Information Updated</h3>
+            <p>
+                Regularly review product names, prices, stock levels
+                and category information to keep your store accurate
+                and easy to manage.
+            </p>
+        </div>
+
+        <div class="admin-products-note-badge">
+            <span class="material-icons">check_circle</span>
+            <strong>Store Ready</strong>
+        </div>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- =================================================
+                 ORDERS
+            ================================================== -->
+
+            <section class="admin-page"
+                     id="orders">
+
+                <div class="admin-page-title-row">
+
+                    <div>
+                        <span>SALES MANAGEMENT</span>
+
+                        <h2>
+                            Orders
+                        </h2>
+
+                        <p>
+                            Review purchases and manage order status.
+                        </p>
+                    </div>
+
+                    <a href="404.html"
+                       class="admin-outline-btn">
+                        Export Orders
+                    </a>
+
+                </div>
+
+
+                <div class="admin-order-status-grid">
+
+                    <div>
+                        <span class="material-icons">
+                            all_inbox
+                        </span>
+
+                        <small>
+                            ALL ORDERS
+                        </small>
+
+                        <strong>
+                            1,248
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span class="material-icons">
+                            pending_actions
+                        </span>
+
+                        <small>
+                            PROCESSING
+                        </small>
+
+                        <strong>
+                            24
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span class="material-icons">
+                            local_shipping
+                        </span>
+
+                        <small>
+                            SHIPPED
+                        </small>
+
+                        <strong>
+                            18
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span class="material-icons">
+                            check_circle
+                        </span>
+
+                        <small>
+                            COMPLETED
+                        </small>
+
+                        <strong>
+                            1,206
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="admin-orders-panel">
+
+                    <div class="admin-orders-heading">
+
+                        <div>
+                            <h3>
+                                Latest Orders
+                            </h3>
+
+                            <p>
+                                Recent customer purchases
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-order-row admin-order-head">
+
+                        <span>
+                            CUSTOMER
+                        </span>
+
+                        <span>
+                            PRODUCT
+                        </span>
+
+                        <span>
+                            ORDER
+                        </span>
+
+                        <span>
+                            TOTAL
+                        </span>
+
+                        <span>
+                            STATUS
+                        </span>
+
+                        <span>
+                            ACTION
+                        </span>
+
+                    </div>
+
+
+                    <div class="admin-order-row">
+
+                        <div class="admin-order-customer">
+
+                            <span>
+                                RS
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Rahul Sharma
+                                </strong>
+
+                                <small>
+                                    rahul@gmail.com
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <span>
+                            Smart Robot Toy
+                        </span>
+
+                        <span>
+                            #STK-2048
+                        </span>
+
+                        <strong>
+                            ₹1,299
+                        </strong>
+
+                        <em class="status-processing">
+                            Processing
+                        </em>
+
+                        <a href="404.html">
+                            View
+                        </a>
+
+                    </div>
+
+
+                    <div class="admin-order-row">
+
+                        <div class="admin-order-customer">
+
+                            <span>
+                                AP
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Ananya Patel
+                                </strong>
+
+                                <small>
+                                    ananya@gmail.com
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <span>
+                            Family Game Set
+                        </span>
+
+                        <span>
+                            #STK-2039
+                        </span>
+
+                        <strong>
+                            ₹1,499
+                        </strong>
+
+                        <em class="status-shipped">
+                            Shipped
+                        </em>
+
+                        <a href="404.html">
+                            View
+                        </a>
+
+                    </div>
+
+
+                    <div class="admin-order-row">
+
+                        <div class="admin-order-customer">
+
+                            <span>
+                                VK
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Vikram Kumar
+                                </strong>
+
+                                <small>
+                                    vikram@gmail.com
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <span>
+                            Racing Car
+                        </span>
+
+                        <span>
+                            #STK-2027
+                        </span>
+
+                        <strong>
+                            ₹799
+                        </strong>
+
+                        <em class="status-delivered">
+                            Delivered
+                        </em>
+
+                        <a href="404.html">
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- =====================================================
+     ADMIN ORDERS - SMALL EXTRA CONTENT
+===================================================== -->
+
+<div class="admin-orders-insight">
+
+    <div class="admin-orders-insight-main">
+
+        <div class="admin-orders-insight-icon">
+            <span class="material-icons">insights</span>
+        </div>
+
+        <div>
+            <small>ORDER INSIGHT</small>
+            <h3>Today's Store Activity</h3>
+            <p>
+                Orders are moving smoothly across confirmation,
+                packing and delivery stages.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="admin-orders-insight-items">
+
+        <div>
+            <span class="material-icons">shopping_bag</span>
+            <strong>18</strong>
+            <small>New Orders</small>
+        </div>
+
+        <div>
+            <span class="material-icons">inventory_2</span>
+            <strong>11</strong>
+            <small>Being Packed</small>
+        </div>
+
+        <div>
+            <span class="material-icons">local_shipping</span>
+            <strong>7</strong>
+            <small>Dispatched</small>
+        </div>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PROMOTIONS
+            ================================================== -->
+
+            <section class="admin-page"
+                     id="promotions">
+
+                <div class="admin-page-title-row">
+
+                    <div>
+                        <span>MARKETING</span>
+
+                        <h2>
+                            Promotions
+                        </h2>
+
+                        <p>
+                            Manage offers and campaigns for your store.
+                        </p>
+
+                    </div>
+
+                    <a href="404.html"
+                       class="admin-main-btn">
+                        Create Promotion
+                    </a>
+
+                </div>
+
+
+                <div class="admin-promotion-grid">
+
+
+                    <div class="admin-promotion-card green-promo">
+
+                        <span class="material-icons">
+                            local_offer
+                        </span>
+
+                        <small>
+                            ACTIVE OFFER
+                        </small>
+
+                        <h3>
+                            PLAY10
+                        </h3>
+
+                        <p>
+                            Get 10% off selected toys
+                            and games.
+                        </p>
+
+                        <strong>
+                            248 uses
+                        </strong>
+
+                        <a href="404.html">
+                            Manage Offer
+                        </a>
+
+                    </div>
+
+
+                    <div class="admin-promotion-card navy-promo">
+
+                        <span class="material-icons">
+                            redeem
+                        </span>
+
+                        <small>
+                            GIFT CAMPAIGN
+                        </small>
+
+                        <h3>
+                            FUN50
+                        </h3>
+
+                        <p>
+                            Special savings on
+                            family game collections.
+                        </p>
+
+                        <strong>
+                            184 uses
+                        </strong>
+
+                        <a href="404.html">
+                            Manage Campaign
+                        </a>
+
+                    </div>
+
+
+                    <div class="admin-promotion-card pale-promo">
+
+                        <span class="material-icons">
+                            celebration
+                        </span>
+
+                        <small>
+                            UPCOMING
+                        </small>
+
+                        <h3>
+                            FESTIVE FUN
+                        </h3>
+
+                        <p>
+                            New promotional collection
+                            ready to launch.
+                        </p>
+
+                        <strong>
+                            Scheduled
+                        </strong>
+
+                        <a href="404.html">
+                            View Campaign
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-promo-banner">
+
+                    <div>
+
+                        <span class="material-icons">
+                            campaign
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Grow your Stackly store
+                            </strong>
+
+                            <p>
+                                Create campaigns that bring
+                                customers back for more fun.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="404.html">
+                        Marketing Tools
+                    </a>
+
+                </div>
+                <!-- =====================================================
+     ADMIN PROMOTIONS - EXTRA CONTENT
+===================================================== -->
+
+<div class="admin-promotions-extra">
+
+    <!-- Promotion Overview -->
+    <div class="admin-promotion-overview">
+
+        <div class="admin-promotion-overview-content">
+
+            <div class="admin-promotion-overview-icon">
+                <span class="material-icons">campaign</span>
+            </div>
+
+            <div>
+                <small>PROMOTION CENTER</small>
+                <h3>Make Every Offer More Valuable</h3>
+                <p>
+                    Manage special offers, discounts and seasonal
+                    campaigns to give customers more reasons to shop.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="admin-promotion-highlight">
+            <strong>23</strong>
+            <span>Active Offers</span>
+        </div>
+
+    </div>
+
+
+    <!-- Promotion Performance -->
+    <div class="admin-promotion-performance">
+
+        <div class="admin-promotion-heading">
+            <div>
+                <small>PROMOTION PERFORMANCE</small>
+                <h3>Current Campaign Activity</h3>
+            </div>
+
+            <span class="material-icons">trending_up</span>
+        </div>
+
+
+        <div class="admin-promotion-metrics">
+
+            <div class="admin-promotion-metric">
+                <span class="material-icons">local_offer</span>
+                <strong>23</strong>
+                <small>Active Offers</small>
+            </div>
+
+            <div class="admin-promotion-metric">
+                <span class="material-icons">people</span>
+                <strong>684</strong>
+                <small>Customers Reached</small>
+            </div>
+
+            <div class="admin-promotion-metric">
+                <span class="material-icons">shopping_cart</span>
+                <strong>146</strong>
+                <small>Offer Orders</small>
+            </div>
+
+            <div class="admin-promotion-metric">
+                <span class="material-icons">percent</span>
+                <strong>18%</strong>
+                <small>Avg. Discount</small>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Campaign Types -->
+    <div class="admin-promotion-campaigns">
+
+        <div class="admin-promotion-campaign">
+
+            <div class="admin-promotion-campaign-number">
+                01
+            </div>
+
+            <div>
+                <small>SEASONAL</small>
+                <h4>Seasonal Offers</h4>
+                <p>
+                    Create limited-time offers for special seasons,
+                    events and shopping periods.
+                </p>
+            </div>
+
+            <span class="material-icons">event</span>
+
+        </div>
+
+
+        <div class="admin-promotion-campaign">
+
+            <div class="admin-promotion-campaign-number">
+                02
+            </div>
+
+            <div>
+                <small>CUSTOMER</small>
+                <h4>Customer Rewards</h4>
+                <p>
+                    Offer exclusive discounts and benefits to
+                    returning and loyal customers.
+                </p>
+            </div>
+
+            <span class="material-icons">card_giftcard</span>
+
+        </div>
+
+
+        <div class="admin-promotion-campaign">
+
+            <div class="admin-promotion-campaign-number">
+                03
+            </div>
+
+            <div>
+                <small>PRODUCT</small>
+                <h4>Product Discounts</h4>
+                <p>
+                    Highlight selected products with attractive
+                    prices and promotional discounts.
+                </p>
+            </div>
+
+            <span class="material-icons">sell</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Promotion Tip -->
+    <div class="admin-promotion-tip">
+
+        <div class="admin-promotion-tip-icon">
+            <span class="material-icons">lightbulb</span>
+        </div>
+
+        <div>
+            <small>PROMOTION TIP</small>
+            <h3>Keep Offers Simple and Easy to Understand</h3>
+            <p>
+                Clear discount values, simple conditions and
+                limited-time campaigns can make promotions easier
+                for customers to notice and use.
+            </p>
+        </div>
+
+        <div class="admin-promotion-status">
+            <span class="material-icons">check_circle</span>
+            <strong>23 Active</strong>
+        </div>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- =================================================
+                 ANALYTICS
+            ================================================== -->
+
+            <section class="admin-page"
+                     id="analytics">
+
+                <div class="admin-page-title-row">
+
+                    <div>
+                        <span>STORE INSIGHTS</span>
+
+                        <h2>
+                            Analytics
+                        </h2>
+
+                        <p>
+                            Understand how Stackly Toys & Games is performing.
+                        </p>
+
+                    </div>
+
+                    <a href="404.html"
+                       class="admin-outline-btn">
+                        Full Report
+                    </a>
+
+                </div>
+
+
+                <div class="analytics-highlight">
+
+                    <div>
+                        <small>
+                            STORE REVENUE
+                        </small>
+
+                        <strong>
+                            ₹8,42,580
+                        </strong>
+
+                        <span>
+                            +18.6% compared with previous period
+                        </span>
+
+                    </div>
+
+                    <div class="analytics-mini-chart">
+
+                        <i style="height:35%"></i>
+                        <i style="height:48%"></i>
+                        <i style="height:42%"></i>
+                        <i style="height:64%"></i>
+                        <i style="height:55%"></i>
+                        <i style="height:82%"></i>
+                        <i style="height:72%"></i>
+                        <i style="height:92%"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analytics-card-grid">
+
+
+                    <div class="analytics-card">
+
+                        <span class="material-icons">
+                            shopping_cart
+                        </span>
+
+                        <small>
+                            CONVERSION RATE
+                        </small>
+
+                        <strong>
+                            6.8%
+                        </strong>
+
+                        <p>
+                            Visitors who completed a purchase.
+                        </p>
+
+                    </div>
+
+
+                    <div class="analytics-card">
+
+                        <span class="material-icons">
+                            visibility
+                        </span>
+
+                        <small>
+                            PRODUCT VIEWS
+                        </small>
+
+                        <strong>
+                            24.8K
+                        </strong>
+
+                        <p>
+                            Product pages viewed by customers.
+                        </p>
+
+                    </div>
+
+
+                    <div class="analytics-card">
+
+                        <span class="material-icons">
+                            repeat
+                        </span>
+
+                        <small>
+                            REPEAT ORDERS
+                        </small>
+
+                        <strong>
+                            72%
+                        </strong>
+
+                        <p>
+                            Customers returning to shop again.
+                        </p>
+
+                    </div>
+
+
+                    <div class="analytics-card">
+
+                        <span class="material-icons">
+                            star
+                        </span>
+
+                        <small>
+                            STORE RATING
+                        </small>
+
+                        <strong>
+                            4.8/5
+                        </strong>
+
+                        <p>
+                            Average customer rating.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analytics-category-panel">
+
+                    <div class="admin-panel-heading">
+
+                        <div>
+
+                            <span>
+                                CATEGORY PERFORMANCE
+                            </span>
+
+                            <h3>
+                                Popular Toy Categories
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-performance">
+
+                        <div>
+
+                            <span>
+                                Creative Toys
+                            </span>
+
+                            <div>
+                                <i style="width:88%"></i>
+                            </div>
+
+                            <strong>
+                                88%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Board Games
+                            </span>
+
+                            <div>
+                                <i style="width:76%"></i>
+                            </div>
+
+                            <strong>
+                                76%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Action Toys
+                            </span>
+
+                            <div>
+                                <i style="width:68%"></i>
+                            </div>
+
+                            <strong>
+                                68%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Building Sets
+                            </span>
+
+                            <div>
+                                <i style="width:61%"></i>
+                            </div>
+
+                            <strong>
+                                61%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SUPPORT
+            ================================================== -->
+
+            <section class="admin-page"
+                     id="support">
+
+                <div class="admin-page-title-row">
+
+                    <div>
+
+                        <span>CUSTOMER CARE</span>
+
+                        <h2>
+                            Support Center
+                        </h2>
+
+                        <p>
+                            Manage customer questions and store assistance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-support-grid">
+
+
+                    <div class="admin-support-card">
+
+                        <div class="admin-support-icon">
+                            <span class="material-icons">
+                                forum
+                            </span>
+                        </div>
+
+                        <small>
+                            OPEN TICKETS
+                        </small>
+
+                        <strong>
+                            18
+                        </strong>
+
+                        <h3>
+                            Customer Questions
+                        </h3>
+
+                        <p>
+                            Customers waiting for assistance
+                            with orders and products.
+                        </p>
+
+                        <a href="404.html">
+                            Manage Tickets
+                        </a>
+
+                    </div>
+
+
+                    <div class="admin-support-card">
+
+                        <div class="admin-support-icon">
+                            <span class="material-icons">
+                                rate_review
+                            </span>
+                        </div>
+
+                        <small>
+                            NEW FEEDBACK
+                        </small>
+
+                        <strong>
+                            18
+                        </strong>
+
+                        <h3>
+                            Product Reviews
+                        </h3>
+
+                        <p>
+                            Recent customer feedback
+                            waiting for review.
+                        </p>
+
+                        <a href="404.html">
+                            Review Feedback
+                        </a>
+
+                    </div>
+
+
+                    <div class="admin-support-card">
+
+                        <div class="admin-support-icon">
+                            <span class="material-icons">
+                                verified_user
+                            </span>
+                        </div>
+
+                        <small>
+                            CUSTOMER SATISFACTION
+                        </small>
+
+                        <strong>
+                            98%
+                        </strong>
+
+                        <h3>
+                            Service Quality
+                        </h3>
+
+                        <p>
+                            Your customers are enjoying
+                            their Stackly experience.
+                        </p>
+
+                        <a href="#analytics">
+                            View Analytics
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-support-banner">
+
+                    <span class="material-icons">
+                        support_agent
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Stackly Admin Support
+                        </strong>
+
+                        <p>
+                            Keep your customers happy with
+                            quick and reliable assistance.
+                        </p>
+
+                    </div>
+
+                    <a href="404.html">
+                        Contact Support
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+</html>

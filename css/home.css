@@ -1,0 +1,5107 @@
+/* =========================================================
+   TOYS & GAMES HERO
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #ffffff;
+    color: #10231e;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+ /* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.toys-hero {
+    position: relative;
+    width: 100%;
+    min-height: 760px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    /* DARK GREEN OVERLAY + IMAGE */
+  background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.42),
+        rgba(0, 0, 0, 0.42)
+    ),
+    url("../assets/kids-playing.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 110px 0 80px;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.toys-hero-container {
+    width: min(1400px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+
+    align-items: center;
+
+    gap: 55px;
+       position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.toys-hero-content {
+    position: relative;
+    z-index: 5;
+
+    max-width: 650px;
+}
+
+
+/* EYEBROW */
+
+.hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 18px;
+
+    border-radius: 50px;
+
+    background: #eaffc9;
+
+    color: #0a2923;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 25px;
+}
+
+.hero-eyebrow .material-icons {
+    font-size: 19px;
+    color: #f47b20;
+}
+
+
+/* HEADING */
+
+.toys-hero-content h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(52px, 5.2vw, 82px);
+
+    line-height: 0.98;
+
+    letter-spacing: -2.5px;
+
+    color:#b8c5bf;
+
+    font-weight: 700;
+
+    margin-bottom: 28px;
+}
+
+.toys-hero-content h1 span {
+    display: block;
+
+    color: #f47721;
+
+    font-style: italic;
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+    max-width: 560px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color:#ffffff;
+
+    margin-bottom: 34px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 45px;
+}
+
+.hero-btn {
+    min-height: 54px;
+
+    padding: 0 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.hero-btn .material-icons {
+    font-size: 20px;
+}
+
+
+/* PRIMARY */
+
+.hero-primary {
+    background: #0a2923;
+    color: #ffffff;
+
+    border: 1px solid #0a2923;
+}
+
+.hero-primary:hover {
+    background: #f47721;
+    border-color: #f47721;
+
+    transform: translateY(-3px);
+}
+
+
+/* SECONDARY */
+
+.hero-secondary {
+    background: #ffffff;
+
+    color: #0a2923;
+
+    border: 1px solid #b8c5bf;
+}
+
+.hero-secondary:hover {
+    background: #eaffc9;
+
+    border-color: #a9dc72;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.hero-features {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.hero-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.hero-feature > .material-icons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 39px;
+    height: 39px;
+
+    border-radius: 50%;
+
+    background: #effbdc;
+
+    color: #0a2923;
+
+    font-size: 20px;
+}
+
+.hero-feature strong {
+    display: block;
+
+    color:#f47721;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    margin-bottom: 2px;
+}
+
+.hero-feature small {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE AREA
+   ========================================================= */
+
+.toys-hero-visual {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 590px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+   ========================================================= */
+
+.hero-image-wrapper {
+    position: relative;
+
+    width: min(100%, 570px);
+
+    height: 600px;
+
+    overflow: hidden;
+
+    /* SAME GENERAL SHAPE AS REFERENCE */
+   border-radius:
+        48% 48% 22px 22px /
+        31% 31% 22px 22px;
+
+    background: #eaf5df;
+
+    box-shadow:
+        0 25px 60px rgba(10, 41, 35, 0.13);
+}
+
+
+/* IMAGE */
+
+.hero-main-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1.04);
+
+    will-change: clip-path, transform;
+}
+
+
+
+
+/* TOP */
+
+.hero-icon-one {
+    top: 115px;
+    left: -38px;
+}
+
+
+/* BOTTOM */
+
+.hero-icon-two {
+    right: -28px;
+    bottom: 25px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .toys-hero {
+        padding-top: 100px;
+    }
+
+    .toys-hero-container {
+        gap: 35px;
+    }
+
+    .toys-hero-content h1 {
+        font-size: 58px;
+    }
+
+    .hero-features {
+        gap: 15px;
+    }
+
+    .hero-feature small {
+        display: none;
+    }
+
+    .hero-image-wrapper {
+        height: 540px;
+    }
+
+    .hero-floating-icon {
+        width: 85px;
+        height: 85px;
+
+        border-width: 8px;
+    }
+
+    .hero-floating-icon .material-icons {
+        font-size: 34px;
+    }
+
+    .hero-icon-one {
+        left: -25px;
+        top: 100px;
+    }
+
+    .hero-icon-two {
+        right: -20px;
+    }
+}
+
+/* =========================================================
+   MOBILE - FINAL ALIGNMENT
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ================= HERO ================= */
+
+    .toys-hero {
+        width: 100%;
+        min-height: auto;
+
+        padding: 95px 0 55px;
+
+        overflow: hidden;
+    }
+
+
+    .toys-hero-container {
+        width: 92%;
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 42px;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .toys-hero-content {
+        width: 100%;
+        max-width: 600px;
+
+        text-align: center;
+    }
+
+
+    /* ================= EYEBROW ================= */
+
+    .hero-eyebrow {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 6px;
+
+        padding: 9px 14px;
+
+        margin-bottom: 18px;
+
+        font-size: 9px;
+
+        line-height: 1.2;
+
+        white-space: nowrap;
+    }
+
+    .hero-eyebrow .material-icons {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        font-size: 17px;
+    }
+
+
+    /* ================= HEADING ================= */
+
+    .toys-hero-content h1 {
+        width: 100%;
+
+        margin: 0 0 17px;
+
+        font-size: clamp(38px, 10vw, 54px);
+
+        line-height: 1.05;
+
+        letter-spacing: -1px;
+    }
+
+    .toys-hero-content h1 span {
+        display: block;
+
+        margin-top: 3px;
+    }
+
+
+    /* ================= DESCRIPTION ================= */
+
+    .hero-description {
+        width: 100%;
+        max-width: 520px;
+
+        margin: 0 auto 25px;
+
+        padding: 0 5px;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+
+        color: #ffffff;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+       ===================================================== */
+
+    .hero-buttons {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: nowrap;
+
+        gap: 10px;
+
+        margin: 0 auto 30px;
+    }
+
+
+    /* BOTH BUTTONS EXACT SAME SIZE */
+
+    .hero-btn {
+        width: calc(50% - 5px) !important;
+
+        max-width: 190px;
+
+        min-width: 0 !important;
+
+        height: 48px;
+        min-height: 48px;
+
+        padding: 0 10px !important;
+
+        display: inline-flex !important;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 6px;
+
+        flex: 1 1 0;
+
+        white-space: nowrap;
+
+        border-radius: 5px;
+
+        font-size: 11px;
+
+        line-height: 1;
+
+        font-weight: 700;
+    }
+
+
+    /* MATERIAL ICONS */
+
+    .hero-btn .material-icons {
+        display: inline-flex !important;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 18px;
+        height: 18px;
+
+        min-width: 18px;
+
+        font-size: 18px !important;
+
+        line-height: 1;
+
+        flex-shrink: 0;
+
+        visibility: visible !important;
+
+        opacity: 1 !important;
+    }
+
+
+    /* =====================================================
+       THREE BADGES - ONE LINE
+    ===================================================== */
+
+    .hero-features {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 7px;
+
+        margin: 0 auto;
+
+        padding: 0;
+    }
+
+
+    .hero-feature {
+        width: 100%;
+
+        min-width: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 5px;
+
+        text-align: left;
+    }
+
+
+    /* FEATURE ICON */
+
+    .hero-feature > .material-icons {
+        width: 32px;
+        height: 32px;
+
+        min-width: 32px;
+
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: #effbdc;
+
+        color: #0a2923;
+
+        font-size: 16px;
+
+        flex-shrink: 0;
+    }
+
+
+    /* FEATURE TEXT */
+
+    .hero-feature div {
+        min-width: 0;
+
+        overflow: visible;
+    }
+
+
+    .hero-feature strong {
+        display: block;
+
+        width: 100%;
+
+        color: #f47721;
+
+        font-size: 9px;
+
+        line-height: 1.25;
+
+        font-weight: 700;
+
+        white-space: nowrap;
+    }
+
+
+    .hero-feature small {
+        display: block;
+
+        width: 100%;
+
+        margin-top: 2px;
+
+        color: #ffffff;
+
+        font-size: 9px;
+
+        line-height: 1.25;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .toys-hero-visual {
+        width: 100%;
+
+        min-height: 430px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+
+
+    .hero-image-wrapper {
+        width: 88%;
+
+        height: 420px;
+
+        overflow: hidden;
+
+        border-radius:
+            48% 48% 18px 18px /
+            25% 25% 18px 18px;
+    }
+
+
+    .hero-main-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    /* =====================================================
+       FLOATING ICONS
+    ===================================================== */
+
+    .hero-floating-icon {
+        width: 65px;
+        height: 65px;
+
+        border-width: 6px;
+    }
+
+
+    .hero-floating-icon .material-icons {
+        display: inline-flex;
+
+        font-size: 25px;
+    }
+
+
+    .hero-icon-one {
+        left: 0;
+        top: 65px;
+    }
+
+
+    .hero-icon-two {
+        right: 0;
+        bottom: 8px;
+    }
+
+
+    /* HIDE BADGE ON MOBILE */
+
+    .hero-product-badge {
+        display: block;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .toys-hero {
+        padding: 90px 0 50px;
+    }
+
+
+    .toys-hero-container {
+        width: 92%;
+
+        gap: 38px;
+    }
+
+
+    /* ================= HEADING ================= */
+
+    .toys-hero-content h1 {
+        font-size: 38px;
+
+        line-height: 1.06;
+
+        letter-spacing: -0.7px;
+    }
+
+
+    /* ================= DESCRIPTION ================= */
+
+    .hero-description {
+        font-size: 13px;
+
+        line-height: 1.7;
+
+        padding: 0 3px;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+
+    .hero-buttons {
+        width: 100%;
+
+        gap: 8px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .hero-btn {
+        width: calc(50% - 4px) !important;
+
+        max-width: none;
+
+        height: 46px;
+        min-height: 46px;
+
+        padding: 0 8px !important;
+
+        gap: 5px;
+
+        font-size: 15px;
+    }
+
+
+    .hero-btn .material-icons {
+        width: 17px;
+        height: 17px;
+
+        min-width: 17px;
+
+        font-size: 17px !important;
+    }
+
+
+    /* =====================================================
+       THREE BADGES - STILL ONE LINE
+    ===================================================== */
+
+    .hero-features {
+        width: 100%;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 5px;
+    }
+
+
+    .hero-feature {
+        gap: 4px;
+
+        justify-content: center;
+    }
+
+
+    .hero-feature > .material-icons {
+        width: 29px;
+        height: 29px;
+
+        min-width: 29px;
+
+        font-size: 14px;
+    }
+
+
+    .hero-feature strong {
+        font-size: 11px;
+
+        line-height: 1.2;
+    }
+
+
+    .hero-feature small {
+        font-size:11px;
+
+        line-height: 1.2;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .toys-hero-visual {
+        min-height: 350px;
+    }
+
+
+    .hero-image-wrapper {
+        width: 87%;
+
+        height: 350px;
+
+        border-radius:
+            48% 48% 15px 15px /
+            23% 23% 15px 15px;
+    }
+
+
+    /* FLOATING ICONS */
+
+    .hero-floating-icon {
+        width: 58px;
+        height: 58px;
+
+        border-width: 5px;
+    }
+
+
+    .hero-floating-icon .material-icons {
+        font-size: 22px;
+    }
+
+
+    .hero-icon-one {
+        left: 0;
+        top: 55px;
+    }
+
+
+    .hero-icon-two {
+        right: 0;
+        bottom: 5px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .toys-hero-container {
+        width: 93%;
+    }
+
+
+    .toys-hero-content h1 {
+        font-size: 34px;
+    }
+
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-buttons {
+        gap: 6px;
+    }
+
+
+    .hero-btn {
+        height: 44px;
+        min-height: 44px;
+
+        padding: 0 5px !important;
+
+        font-size: 16px;
+
+        gap: 4px;
+    }
+
+
+    .hero-btn .material-icons {
+        width: 15px;
+        height: 15px;
+
+        min-width: 15px;
+
+        font-size: 15px !important;
+    }
+
+
+    /* THREE BADGES */
+
+    .hero-features {
+        gap: 3px;
+    }
+
+
+    .hero-feature {
+        gap: 3px;
+    }
+
+
+    .hero-feature > .material-icons {
+        width: 27px;
+        height: 27px;
+
+        min-width: 27px;
+
+        font-size: 13px;
+    }
+
+
+    .hero-feature strong {
+        font-size: 10px;
+    }
+
+
+    .hero-feature small {
+        font-size: 6px;
+    }
+}
+
+
+/* =========================================================
+   TOYS BENEFITS INFINITE MARQUEE
+   ========================================================= */
+
+.toys-marquee {
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:#0a2923;
+
+    position: relative;
+    z-index: 5;
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+
+/* =========================================================
+   MOVING TRACK
+   ========================================================= */
+
+.toys-marquee-track {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+
+    white-space: nowrap;
+
+    animation: toysMarqueeMove 32s linear infinite;
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   MARQUEE ITEM
+   ========================================================= */
+
+.toys-marquee-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 25px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   MATERIAL ICONS
+   ========================================================= */
+
+.toys-marquee-item .material-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+
+    color: #c9ff91;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   STAR SEPARATOR
+   ========================================================= */
+
+.toys-marquee-star {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffd12f;
+
+    font-size: 22px;
+
+    margin: 0 8px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   INFINITE ANIMATION
+   ========================================================= */
+
+@keyframes toysMarqueeMove {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* =========================================================
+   PAUSE ON HOVER
+   ========================================================= */
+
+.toys-marquee:hover .toys-marquee-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .toys-marquee {
+        height: 65px;
+    }
+
+    .toys-marquee-item {
+        gap: 7px;
+
+        padding: 0 17px;
+
+        font-size: 12px;
+    }
+
+    .toys-marquee-item .material-icons {
+        font-size: 19px;
+    }
+
+    .toys-marquee-star {
+        font-size: 17px;
+        margin: 0 4px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .toys-marquee {
+        height: 58px;
+    }
+
+    .toys-marquee-track {
+        animation-duration: 24s;
+    }
+
+    .toys-marquee-item {
+        gap: 6px;
+
+        padding: 0 13px;
+
+        font-size: 10px;
+    }
+
+    .toys-marquee-item .material-icons {
+        font-size: 17px;
+    }
+
+    .toys-marquee-star {
+        font-size: 14px;
+        margin: 0 3px;
+    }
+
+}
+
+
+
+/* =========================================================
+   STACKLY INTRO SECTION
+   ========================================================= */
+
+.stackly-intro-section {
+    position: relative;
+    width: 100%;
+
+    padding: 110px 0 120px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.stackly-intro-container {
+    width: min(1100px, 88%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.95fr;
+
+    align-items: start;
+
+    gap: 85px;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.stackly-intro-left {
+    position: relative;
+
+    width: 100%;
+
+    padding-top: 5px;
+}
+
+
+.stackly-intro-image-wrap {
+    width: 100%;
+
+    height: 575px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background: #edf5e8;
+}
+
+
+.stackly-intro-main-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    will-change: transform, clip-path;
+}
+
+
+/* =========================================================
+   ROTATING BADGE
+   ========================================================= */
+
+.stackly-intro-badge {
+    position: absolute;
+
+    right: -30px;
+    bottom: -30px;
+
+    width: 125px;
+    height: 125px;
+
+    z-index: 5;
+}
+
+
+.stackly-badge-circle {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+
+    box-shadow:
+        0 15px 35px rgba(22, 163, 74, 0.22);
+}
+
+
+.stackly-badge-circle svg {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    inset: 0;
+
+    animation: stacklyBadgeRotate 16s linear infinite;
+}
+
+
+.stackly-badge-circle text {
+    fill: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.stackly-badge-circle > .material-icons {
+    color: #c9ff91;
+
+    font-size: 35px;
+}
+
+
+@keyframes stacklyBadgeRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
+
+.stackly-intro-right {
+    width: 100%;
+
+    padding-top: 12px;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.stackly-intro-content {
+    width: 100%;
+
+    max-width: 500px;
+}
+
+
+.stackly-intro-label {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    color: #1d2b52;
+
+    margin-bottom: 13px;
+}
+
+
+.stackly-intro-line {
+    display: block;
+
+    width: 75px;
+    height: 2px;
+
+    background: #16a34a;
+
+    margin-bottom: 17px;
+}
+
+
+.stackly-intro-content h2 {
+    margin: 0 0 22px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(34px, 3.5vw, 48px);
+
+    font-weight: 600;
+
+    line-height: 1.18;
+
+    letter-spacing: -1.5px;
+}
+
+
+.stackly-intro-content h2 span {
+    color: #16a34a;
+}
+
+
+.stackly-intro-content p {
+    margin: 0 0 15px;
+
+    color: #69736f;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.stackly-intro-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 15px;
+
+    min-height: 48px;
+
+    padding: 0 22px;
+
+    background:#0a2923 ;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    border-radius: 3px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.stackly-intro-btn .material-icons {
+    font-size: 18px;
+}
+
+
+.stackly-intro-btn:hover {
+    background:#f47721;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   SECOND IMAGE
+   ========================================================= */
+
+.stackly-intro-second-image {
+    width: 100%;
+
+    height: 390px;
+
+    margin-top: 50px;
+
+    overflow: hidden;
+
+    background: #edf5e8;
+
+    will-change: transform, clip-path;
+}
+
+
+.stackly-intro-second-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .stackly-intro-section {
+        padding: 85px 0 90px;
+    }
+
+    .stackly-intro-container {
+        width: 90%;
+
+        gap: 50px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stackly-intro-image-wrap {
+        height: 500px;
+    }
+
+    .stackly-intro-content h2 {
+        font-size: 34px;
+    }
+
+    .stackly-intro-second-image {
+        height: 320px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .stackly-intro-section {
+        width: 100%;
+
+        padding: 70px 0 75px;
+
+        overflow: hidden;
+    }
+
+
+    .stackly-intro-container {
+        width: 90%;
+
+        max-width: 520px;
+
+        margin: 0 auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 50px;
+    }
+
+
+    /* LEFT IMAGE */
+
+    .stackly-intro-left {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        padding: 0;
+    }
+
+
+    .stackly-intro-image-wrap {
+        width: 100%;
+
+        height: 390px;
+    }
+
+
+    .stackly-intro-main-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* BADGE */
+
+    .stackly-intro-badge {
+        width: 92px;
+        height: 92px;
+
+        right: -8px;
+        bottom: -20px;
+    }
+
+
+    .stackly-badge-circle text {
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .stackly-badge-circle > .material-icons {
+        font-size: 27px;
+    }
+
+
+    /* RIGHT SIDE */
+
+    .stackly-intro-right {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 0;
+
+        text-align: center;
+    }
+
+
+    .stackly-intro-content {
+        width: 100%;
+
+        max-width: 520px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .stackly-intro-label {
+        font-size: 12px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .stackly-intro-line {
+        width: 60px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .stackly-intro-content h2 {
+        width: 100%;
+
+        margin-bottom: 18px;
+
+        font-size: clamp(28px, 8vw, 38px);
+
+        line-height: 1.2;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .stackly-intro-content p {
+        width: 100%;
+
+        margin-bottom: 13px;
+
+        font-size: 12px;
+
+        line-height: 1.75;
+
+        text-align: center;
+    }
+
+
+    .stackly-intro-btn {
+        margin-top: 10px;
+
+        min-height: 46px;
+
+        padding: 0 20px;
+
+        font-size: 14px;
+    }
+
+
+    /* SECOND IMAGE */
+
+    .stackly-intro-second-image {
+        width: 100%;
+
+        height: 300px;
+
+        margin-top: 42px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .stackly-intro-section {
+        padding: 55px 0 65px;
+    }
+
+
+    .stackly-intro-container {
+        width: 90%;
+
+        gap: 45px;
+    }
+
+
+    .stackly-intro-image-wrap {
+        height: 330px;
+    }
+
+
+    .stackly-intro-badge {
+        width: 78px;
+        height: 78px;
+
+        right: -5px;
+        bottom: -16px;
+    }
+
+
+    .stackly-badge-circle text {
+        font-size: 14px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .stackly-badge-circle > .material-icons {
+        font-size: 23px;
+    }
+
+
+    .stackly-intro-content h2 {
+        font-size: 28px;
+
+        line-height: 1.2;
+    }
+
+
+    .stackly-intro-content p {
+        font-size: 11.5px;
+
+        line-height: 1.75;
+    }
+
+
+    .stackly-intro-second-image {
+        height: 260px;
+
+        margin-top: 35px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   STACKLY PRODUCTS SECTION
+   ========================================================= */
+
+.stackly-products-section {
+    position: relative;
+    width: 100%;
+
+    padding: 105px 0 110px;
+
+    background: #f5f9ef;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.stackly-products-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.stackly-products-heading {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    margin-bottom: 52px;
+}
+
+
+.stackly-products-eyebrow {
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    margin-bottom: 13px;
+}
+
+
+.stackly-products-heading-line {
+    width: 74px;
+    height: 2px;
+
+    background: #16a34a;
+
+    margin-bottom: 14px;
+}
+
+
+.stackly-products-heading h2 {
+    margin: 0 0 12px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(35px, 4vw, 48px);
+
+    line-height: 1.15;
+
+    font-weight: 600;
+
+    letter-spacing: -1.3px;
+}
+
+
+.stackly-products-heading p {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: #6e7772;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRODUCTS GRID
+   ========================================================= */
+
+.stackly-products-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    column-gap: 20px;
+
+    row-gap: 45px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+.stackly-product-card {
+    min-width: 0;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   IMAGE BOX
+   ========================================================= */
+
+.stackly-product-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 250px;
+
+    overflow: hidden;
+
+    background: #edf2e9;
+
+    isolation: isolate;
+}
+
+
+.stackly-product-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.65s cubic-bezier(.2,.7,.2,1);
+}
+
+
+.stackly-product-card:hover .stackly-product-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   SALE BADGE
+   ========================================================= */
+
+.stackly-sale-badge {
+    position: absolute;
+
+    top: 17px;
+    left: 17px;
+
+    z-index: 5;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 24px;
+
+    padding: 0 9px;
+
+    background: #168bea;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HOVER OVERLAY
+   ========================================================= */
+
+.stackly-product-hover {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 4;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    background: rgba(29, 43, 82, 0.16);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+.stackly-product-card:hover .stackly-product-hover {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   HOVER ICON BUTTONS
+   ========================================================= */
+
+.stackly-product-hover a {
+    width: 43px;
+    height: 43px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #1d2b52;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.13);
+
+    transform: translateY(15px);
+
+    opacity: 0;
+
+    transition:
+        transform 0.35s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        opacity 0.35s ease;
+}
+
+
+.stackly-product-card:hover .stackly-product-hover a {
+    transform: translateY(0);
+
+    opacity: 1;
+}
+
+
+.stackly-product-card:hover .stackly-product-hover a:nth-child(1) {
+    transition-delay: 0.04s;
+}
+
+
+.stackly-product-card:hover .stackly-product-hover a:nth-child(2) {
+    transition-delay: 0.10s;
+}
+
+
+.stackly-product-card:hover .stackly-product-hover a:nth-child(3) {
+    transition-delay: 0.16s;
+}
+
+
+.stackly-product-hover a:hover {
+    background: #16a34a;
+
+    color: #ffffff;
+
+    transform: translateY(-4px) !important;
+}
+
+
+.stackly-product-hover .material-icons {
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   PRODUCT INFO
+   ========================================================= */
+
+.stackly-product-info {
+    padding-top: 13px;
+}
+
+
+/* =========================================================
+   RATING
+   ========================================================= */
+
+.stackly-product-rating {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+.stackly-product-rating .material-icons {
+    color: #f2c400;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PRODUCT TITLE
+   ========================================================= */
+
+.stackly-product-info h3 {
+    margin: 0 0 7px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.stackly-product-price {
+    margin: 0;
+
+    color: #168bea;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   VIEW ALL BUTTON
+   ========================================================= */
+
+.stackly-products-button {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 55px;
+}
+
+
+.stackly-products-button a {
+    min-height: 48px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 24px;
+
+    background: #1d2b52;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    border-radius: 3px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.stackly-products-button a:hover {
+    background: #16a34a;
+
+    transform: translateY(-3px);
+}
+
+
+.stackly-products-button .material-icons {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .stackly-products-section {
+        padding: 85px 0 90px;
+    }
+
+    .stackly-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 35px 18px;
+    }
+
+    .stackly-product-image {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .stackly-products-section {
+        padding: 65px 0 75px;
+    }
+
+
+    .stackly-products-container {
+        width: 91%;
+    }
+
+
+    .stackly-products-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .stackly-products-eyebrow {
+        font-size: 10px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .stackly-products-heading-line {
+        width: 55px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .stackly-products-heading h2 {
+        font-size: 30px;
+
+        letter-spacing: -0.7px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .stackly-products-heading p {
+        width: 95%;
+
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+
+    .stackly-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 11px;
+
+        row-gap: 30px;
+    }
+
+
+    .stackly-product-image {
+        height: 190px;
+    }
+
+
+    .stackly-sale-badge {
+        top: 10px;
+
+        left: 10px;
+
+        min-height: 21px;
+
+        padding: 0 6px;
+
+        font-size: 7px;
+    }
+
+
+    .stackly-product-info {
+        padding-top: 9px;
+    }
+
+
+    .stackly-product-rating {
+        margin-bottom: 5px;
+    }
+
+
+    .stackly-product-rating .material-icons {
+        font-size: 12px;
+    }
+
+
+    .stackly-product-info h3 {
+        font-size: 10px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .stackly-product-price {
+        font-size: 10px;
+    }
+
+
+    /* MOBILE HOVER / TOUCH ICONS */
+
+    .stackly-product-hover {
+        gap: 5px;
+    }
+
+
+    .stackly-product-hover a {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .stackly-product-hover .material-icons {
+        font-size: 16px;
+    }
+
+
+    .stackly-products-button {
+        margin-top: 40px;
+    }
+
+
+    .stackly-products-button a {
+        min-height: 44px;
+
+        padding: 0 20px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .stackly-products-container {
+        width: 92%;
+    }
+
+
+    .stackly-products-grid {
+        column-gap: 9px;
+
+        row-gap: 27px;
+    }
+
+
+    .stackly-product-image {
+        height: 165px;
+    }
+
+
+    .stackly-product-hover a {
+        width: 31px;
+        height: 31px;
+    }
+
+
+    .stackly-product-hover .material-icons {
+        font-size: 14px;
+    }
+
+
+    .stackly-product-info h3 {
+        font-size: 9px;
+    }
+
+
+    .stackly-product-price {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY PLAY / VIDEO SECTION
+   ========================================================= */
+
+.stackly-play-section {
+    position: relative;
+
+    width: 100%;
+
+    height: 575px;
+
+    overflow: hidden;
+
+    background: #101b18;
+
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+.stackly-play-background {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+
+.stackly-play-background img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1.05);
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   DARK OVERLAY
+   ========================================================= */
+
+.stackly-play-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 41, 35, 0.42),
+            rgba(10, 41, 35, 0.18),
+            rgba(10, 41, 35, 0.42)
+        );
+}
+
+
+/* =========================================================
+   PLAY CONTENT
+   ========================================================= */
+
+.stackly-play-content {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   PLAY BUTTON
+   ========================================================= */
+
+.stackly-play-button {
+    width: 135px;
+    height: 135px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border: 1px solid rgba(255,255,255,0.85);
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.04);
+
+    backdrop-filter: blur(3px);
+
+    -webkit-backdrop-filter: blur(3px);
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* =========================================================
+   OUTER RING
+   ========================================================= */
+
+.stackly-play-button::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -12px;
+
+    border: 1px solid rgba(255,255,255,0.30);
+
+    border-radius: 50%;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+/* =========================================================
+   SECOND OUTER RING
+   ========================================================= */
+
+.stackly-play-button::after {
+    content: "";
+
+    position: absolute;
+
+    inset: -25px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 50%;
+
+    transition:
+        transform 0.6s ease,
+        opacity 0.6s ease;
+}
+
+
+/* =========================================================
+   MATERIAL ICON
+   ========================================================= */
+
+.stackly-play-button .material-icons {
+    font-size: 42px;
+
+    color: #ffffff;
+
+    margin-left: 4px;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.stackly-play-button:hover {
+    background: rgba(22,163,74,0.85);
+
+    border-color: #c9ff91;
+
+    transform: scale(1.08);
+}
+
+
+.stackly-play-button:hover::before {
+    transform: scale(1.12);
+
+    opacity: 0.7;
+}
+
+
+.stackly-play-button:hover::after {
+    transform: scale(1.18);
+
+    opacity: 0.4;
+}
+
+
+.stackly-play-button:hover .material-icons {
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .stackly-play-section {
+        height: 500px;
+    }
+
+    .stackly-play-button {
+        width: 115px;
+        height: 115px;
+    }
+
+    .stackly-play-button .material-icons {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .stackly-play-section {
+        width: 100%;
+
+        height: 430px;
+    }
+
+
+    .stackly-play-background img {
+        object-position: center center;
+    }
+
+
+    .stackly-play-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(10, 41, 35, 0.48),
+                rgba(10, 41, 35, 0.25),
+                rgba(10, 41, 35, 0.48)
+            );
+    }
+
+
+    .stackly-play-button {
+        width: 95px;
+        height: 95px;
+    }
+
+
+    .stackly-play-button::before {
+        inset: -9px;
+    }
+
+
+    .stackly-play-button::after {
+        inset: -18px;
+    }
+
+
+    .stackly-play-button .material-icons {
+        font-size: 31px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .stackly-play-section {
+        height: 360px;
+    }
+
+
+    .stackly-play-button {
+        width: 82px;
+        height: 82px;
+    }
+
+
+    .stackly-play-button::before {
+        inset: -8px;
+    }
+
+
+    .stackly-play-button::after {
+        inset: -15px;
+    }
+
+
+    .stackly-play-button .material-icons {
+        font-size: 27px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY ABOUT SECTION
+   ========================================================= */
+
+.stackly-about-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 115px 0 125px;
+
+    background:
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(201, 255, 145, 0.22),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 95% 80%,
+            rgba(201, 255, 145, 0.18),
+            transparent 28%
+        ),
+        #f8fcf4;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.stackly-about-container {
+    width: min(1240px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    align-items: center;
+
+    gap: 85px;
+}
+
+
+/* =========================================================
+   LEFT VISUAL
+   ========================================================= */
+
+.stackly-about-visual {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 610px;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+   ========================================================= */
+
+.stackly-about-main-image {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 82%;
+
+    height: 570px;
+
+    overflow: hidden;
+
+    background: #e8f2e1;
+
+    box-shadow:
+        0 25px 60px rgba(10, 41, 35, 0.10);
+
+    will-change: transform, opacity, clip-path;
+}
+
+
+.stackly-about-main-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================================
+   YEARS CARD
+   ========================================================= */
+
+.stackly-years-card {
+    position: absolute;
+
+    top: 35px;
+    right: 0;
+
+    z-index: 5;
+
+    min-width: 225px;
+
+    padding: 17px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 18px 45px rgba(10, 41, 35, 0.13);
+
+    will-change: transform, opacity;
+}
+
+
+.stackly-years-card > .material-icons {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-size: 24px;
+}
+
+
+.stackly-years-card strong {
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+.stackly-years-card small {
+    margin-left: 7px;
+
+    color: #77817c;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   SMALL IMAGE
+   ========================================================= */
+
+.stackly-about-small-image {
+    position: absolute;
+
+    right: -5px;
+    bottom: 0;
+
+    z-index: 4;
+
+    width: 52%;
+
+    height: 225px;
+
+    overflow: hidden;
+
+    border: 9px solid #ffffff;
+
+    border-radius: 25px;
+
+    background: #e8f2e1;
+
+    box-shadow:
+        0 18px 45px rgba(10, 41, 35, 0.13);
+
+    will-change: transform, opacity, clip-path;
+}
+
+
+.stackly-about-small-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+   ========================================================= */
+
+.stackly-about-content {
+    max-width: 610px;
+
+    will-change: transform, opacity;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.stackly-about-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 17px;
+
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.stackly-about-label .material-icons {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.stackly-about-content h2 {
+    margin: 0 0 25px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(38px, 4vw, 57px);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+
+    letter-spacing: -1.8px;
+}
+
+
+.stackly-about-content h2 span {
+    color: #16a34a;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.stackly-about-description {
+    max-width: 590px;
+
+    margin: 0 0 28px;
+
+    color: #6d7873;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.stackly-about-features {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px 30px;
+
+    margin-bottom: 32px;
+}
+
+
+.stackly-about-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.stackly-about-feature .material-icons {
+    width: 30px;
+    height: 30px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #e3f7d5;
+
+    color: #16a34a;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   FOUNDER
+   ========================================================= */
+
+.stackly-founder {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 27px;
+}
+
+
+.stackly-founder-image {
+    width: 65px;
+    height: 65px;
+
+    padding: 3px;
+
+    border: 2px solid #16a34a;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+
+.stackly-founder-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+.stackly-founder-info h3 {
+    margin: 0 0 5px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    font-weight: 700;
+}
+
+
+.stackly-founder-info p {
+    margin: 0;
+
+    color: #78827e;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.stackly-about-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 190px;
+
+    min-height: 52px;
+
+    padding: 0 25px;
+
+    background: #1d2b52;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 15px 30px rgba(29, 43, 82, 0.18);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.stackly-about-button:hover {
+    background: #16a34a;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 35px rgba(22, 163, 74, 0.22);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .stackly-about-section {
+        padding: 90px 0 100px;
+    }
+
+    .stackly-about-container {
+        width: 90%;
+
+        gap: 55px;
+    }
+
+    .stackly-about-visual {
+        min-height: 520px;
+    }
+
+    .stackly-about-main-image {
+        height: 480px;
+    }
+
+    .stackly-about-small-image {
+        height: 185px;
+    }
+
+    .stackly-years-card {
+        min-width: 190px;
+
+        padding: 13px 16px;
+    }
+
+    .stackly-about-content h2 {
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .stackly-about-section {
+        padding: 70px 0 80px;
+
+        overflow: hidden;
+    }
+
+
+    .stackly-about-container {
+        width: 90%;
+
+        max-width: 550px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 55px;
+    }
+
+
+    /* VISUAL */
+
+    .stackly-about-visual {
+        width: 100%;
+
+        min-height: 430px;
+
+        display: flex;
+
+        justify-content: center;
+    }
+
+
+    .stackly-about-main-image {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 88%;
+
+        height: 390px;
+
+    }
+
+
+    .stackly-years-card {
+        top: 20px;
+        right: 0;
+
+        min-width: 165px;
+
+        padding: 10px 13px;
+
+        border-radius: 14px;
+
+        gap: 8px;
+    }
+
+
+    .stackly-years-card > .material-icons {
+        width: 35px;
+        height: 35px;
+
+        font-size: 19px;
+    }
+
+
+    .stackly-years-card strong {
+        font-size: 22px;
+    }
+
+
+    .stackly-years-card small {
+        font-size: 8px;
+
+        margin-left: 4px;
+    }
+
+
+    .stackly-about-small-image {
+        right: 0;
+        bottom: 0;
+
+        width: 48%;
+
+        height: 155px;
+
+        border-width: 6px;
+
+        border-radius: 18px;
+    }
+
+
+    /* CONTENT */
+
+    .stackly-about-content {
+        width: 100%;
+
+        max-width: 550px;
+
+        text-align: center;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .stackly-about-label {
+        margin-bottom: 17px;
+
+        padding: 8px 14px;
+
+        font-size: 9px;
+    }
+
+
+    .stackly-about-label .material-icons {
+        font-size: 15px;
+    }
+
+
+    .stackly-about-content h2 {
+        width: 100%;
+
+        margin-bottom: 19px;
+
+        font-size: clamp(30px, 8vw, 40px);
+
+        line-height: 1.18;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .stackly-about-description {
+        width: 100%;
+
+        margin-bottom: 25px;
+
+        font-size: 12px;
+
+        line-height: 1.8;
+
+        text-align: center;
+    }
+
+
+    .stackly-about-features {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .stackly-about-feature {
+        justify-content: center;
+
+        font-size: 11px;
+
+        text-align: left;
+    }
+
+
+    .stackly-about-feature .material-icons {
+        width: 27px;
+        height: 27px;
+
+        font-size: 15px;
+    }
+
+
+    .stackly-founder {
+        justify-content: center;
+
+        margin-bottom: 25px;
+    }
+
+
+    .stackly-founder-image {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    .stackly-founder-info {
+        text-align: left;
+    }
+
+
+    .stackly-founder-info h3 {
+        font-size: 17px;
+    }
+
+
+    .stackly-founder-info p {
+        font-size: 11px;
+    }
+
+
+    .stackly-about-button {
+        min-width: 175px;
+
+        min-height: 47px;
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .stackly-about-section {
+        padding: 55px 0 65px;
+    }
+
+
+    .stackly-about-container {
+        width: 91%;
+
+        gap: 45px;
+    }
+
+
+    .stackly-about-visual {
+        min-height: 355px;
+    }
+
+
+    .stackly-about-main-image {
+        width: 88%;
+
+        height: 320px;
+
+    
+    }
+
+
+    .stackly-years-card {
+        top: 15px;
+
+        min-width: 145px;
+
+        padding: 8px 10px;
+    }
+
+
+    .stackly-years-card > .material-icons {
+        width: 30px;
+        height: 30px;
+
+        font-size: 17px;
+    }
+
+
+    .stackly-years-card strong {
+        font-size: 19px;
+    }
+
+
+    .stackly-years-card small {
+        font-size: 11px;
+    }
+
+
+    .stackly-about-small-image {
+        height: 125px;
+
+        border-width: 5px;
+
+        border-radius: 15px;
+    }
+
+
+    .stackly-about-content h2 {
+        font-size: 29px;
+
+        line-height: 1.2;
+    }
+
+
+    .stackly-about-description {
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    .stackly-about-feature {
+        font-size: 12px;
+    }
+
+
+    .stackly-about-button {
+        min-height: 44px;
+
+        min-width: 165px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================
+   STACKLY TOYS & GAMES - STATS SECTION
+========================================= */
+
+.stackly-stats-section {
+    width: 100%;
+    padding: 75px 30px;
+    background: #1d2b52;
+    overflow: hidden;
+    position: relative;
+}
+
+/* subtle theme glow */
+.stackly-stats-section::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    left: -120px;
+    top: -150px;
+    background: rgba(201, 255, 145, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.stackly-stats-section::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    right: -120px;
+    bottom: -160px;
+    background: rgba(22, 163, 74, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.stackly-stats-container {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.stackly-stat-item {
+    min-width: 0;
+    text-align: center;
+    padding: 8px 20px;
+    position: relative;
+}
+
+/* vertical separators */
+.stackly-stat-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 75px;
+    transform: translateY(-50%);
+    background: rgba(201, 255, 145, 0.18);
+}
+
+/* NUMBER */
+.stackly-stat-number {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #c9ff91;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 4vw, 68px);
+    font-weight: 700;
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    font-variant-numeric: tabular-nums;
+
+    text-shadow:
+        0 4px 20px rgba(201, 255, 145, 0.08);
+}
+
+/* LABEL */
+.stackly-stat-label {
+    margin-top: 18px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* small green accent */
+.stackly-stat-item::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #16a34a;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 14px;
+
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .stackly-stats-section {
+        padding: 65px 20px;
+    }
+
+    .stackly-stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 45px;
+    }
+
+    .stackly-stat-item {
+        padding: 5px 15px;
+    }
+
+    /* remove separator from 2nd and 4th */
+    .stackly-stat-item:nth-child(2)::after,
+    .stackly-stat-item:nth-child(4)::after {
+        display: none;
+    }
+
+    .stackly-stat-number {
+        font-size: 52px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .stackly-stats-section {
+        padding: 52px 12px;
+    }
+
+    .stackly-stats-container {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 5px;
+        row-gap: 38px;
+    }
+
+    .stackly-stat-item {
+        width: 100%;
+        padding: 4px 5px;
+    }
+
+    /* keep 2 counters in one line */
+    .stackly-stat-item:not(:last-child)::after {
+        display: block;
+    }
+
+    /* no vertical line after right-side counters */
+    .stackly-stat-item:nth-child(2)::after,
+    .stackly-stat-item:nth-child(4)::after {
+        display: none;
+    }
+
+    /* horizontal divider between rows */
+    .stackly-stat-item:nth-child(1)::before,
+    .stackly-stat-item:nth-child(2)::before {
+        display: none;
+    }
+
+    .stackly-stat-number {
+        min-height: 48px;
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .stackly-stat-label {
+        margin-top: 12px;
+        font-size: 8px;
+        letter-spacing: 1.2px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .stackly-stats-section {
+        padding: 45px 8px;
+    }
+
+    .stackly-stats-container {
+        column-gap: 2px;
+        row-gap: 32px;
+    }
+
+    .stackly-stat-number {
+        font-size: 33px;
+    }
+
+    .stackly-stat-label {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* =========================================
+   STACKLY PLAYFUL COLLECTION
+========================================= */
+
+.stackly-gallery-section {
+    width: 100%;
+    padding: 110px 30px 100px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.stackly-gallery-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.stackly-gallery-heading {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.stackly-gallery-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 9px 18px;
+
+    background: #effbdc;
+    color: #16a34a;
+
+    border-radius: 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.stackly-gallery-label .material-icons {
+    font-size: 17px;
+}
+
+.stackly-gallery-heading h2 {
+    margin: 22px 0 17px;
+
+    color: #1d2b52;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.stackly-gallery-heading h2 span {
+    color: #16a34a;
+}
+
+.stackly-gallery-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #6d7774;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   MASONRY GRID
+========================================= */
+
+.stackly-gallery-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        1.05fr
+        0.95fr
+        0.95fr;
+
+    grid-template-rows:
+        270px
+        270px;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.stackly-gallery-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 26px;
+
+    background: #effbdc;
+
+    opacity: 0;
+
+    transform: translateY(70px) scale(.97);
+
+    will-change: transform, opacity;
+}
+
+.stackly-gallery-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(.22, .61, .36, 1);
+}
+
+
+/* different card positions */
+
+.gallery-card-one {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.gallery-card-two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gallery-card-three {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.gallery-card-four {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.gallery-card-five {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+/* sixth card hidden from main grid on desktop
+   and used as a special wide card */
+
+.gallery-card-six {
+    display: none;
+}
+
+
+/* =========================================
+   IMAGE HOVER
+========================================= */
+
+.stackly-gallery-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   DARK / GREEN IMAGE OVERLAY
+========================================= */
+
+.stackly-gallery-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(29, 43, 82, 0.02) 25%,
+            rgba(29, 43, 82, 0.78) 100%
+        );
+
+    opacity: .85;
+
+    pointer-events: none;
+
+    transition: opacity .4s ease;
+}
+
+.stackly-gallery-card:hover::after {
+    opacity: 1;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.stackly-gallery-overlay {
+    position: absolute;
+
+    left: 22px;
+    right: 22px;
+    bottom: 20px;
+
+    z-index: 3;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    color: #ffffff;
+}
+
+.stackly-gallery-overlay > div {
+    min-width: 0;
+}
+
+.stackly-gallery-overlay .material-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    margin-bottom: 8px;
+
+    border-radius: 50%;
+
+    background: #c9ff91;
+    color: #1d2b52;
+
+    font-size: 18px;
+}
+
+.stackly-gallery-overlay h3 {
+    margin: 0 0 4px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.stackly-gallery-overlay p {
+    margin: 0;
+
+    color: rgba(255,255,255,.78);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.stackly-gallery-overlay > a {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.95);
+
+    color: #1d2b52;
+
+    text-decoration: none;
+
+    transform: translateY(12px);
+    opacity: 0;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease,
+        background .35s ease,
+        color .35s ease;
+}
+
+.stackly-gallery-card:hover .stackly-gallery-overlay > a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.stackly-gallery-overlay > a:hover {
+    background: #c9ff91;
+    color: #1d2b52;
+}
+
+.stackly-gallery-overlay > a .material-icons {
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    background: transparent;
+    color: inherit;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.stackly-gallery-bottom {
+    width: 100%;
+
+    margin-top: 32px;
+    padding: 23px 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: #f5f9ef;
+
+    border: 1px solid #e5f0d9;
+    border-radius: 20px;
+}
+
+.stackly-gallery-bottom-text {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.stackly-gallery-bottom-text > .material-icons {
+    width: 43px;
+    height: 43px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1d2b52;
+    color: #c9ff91;
+
+    font-size: 20px;
+}
+
+.stackly-gallery-bottom-text strong {
+    display: block;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.stackly-gallery-bottom-text small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #7b8581;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+}
+
+.stackly-gallery-button {
+    min-height: 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 23px;
+
+    border-radius: 30px;
+
+    background: #1d2b52;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.stackly-gallery-button:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
+}
+
+.stackly-gallery-button .material-icons {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .stackly-gallery-section {
+        padding: 85px 22px 75px;
+    }
+
+    .stackly-gallery-heading {
+        margin-bottom: 48px;
+    }
+
+    .stackly-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 260px 260px 260px;
+        gap: 16px;
+    }
+
+    .gallery-card-one {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .gallery-card-two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .gallery-card-three {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .gallery-card-four {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+
+    .gallery-card-five,
+    .gallery-card-six {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .stackly-gallery-section {
+        padding: 70px 14px 60px;
+    }
+
+    .stackly-gallery-heading {
+        margin-bottom: 38px;
+    }
+
+    .stackly-gallery-label {
+        padding: 8px 14px;
+        font-size: 9px;
+        letter-spacing: 1.2px;
+    }
+
+    .stackly-gallery-label .material-icons {
+        font-size: 15px;
+    }
+
+    .stackly-gallery-heading h2 {
+        margin: 18px 0 13px;
+
+        font-size: 37px;
+        line-height: 1.08;
+        letter-spacing: -.7px;
+    }
+
+    .stackly-gallery-heading p {
+        padding: 0 8px;
+
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+
+    /* 2-column mobile gallery */
+
+    .stackly-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows:
+            235px
+            180px
+            235px;
+
+        gap: 10px;
+    }
+
+    .gallery-card-one {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .gallery-card-two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .gallery-card-three {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .gallery-card-four {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+
+    .gallery-card-five,
+    .gallery-card-six {
+        display: none;
+    }
+
+
+    .stackly-gallery-card {
+        border-radius: 17px;
+    }
+
+    .stackly-gallery-overlay {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+
+        gap: 8px;
+    }
+
+    .stackly-gallery-overlay .material-icons {
+        width: 29px;
+        height: 29px;
+
+        margin-bottom: 5px;
+
+        font-size: 14px;
+    }
+
+    .stackly-gallery-overlay h3 {
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+
+    .stackly-gallery-overlay p {
+        font-size: 11px;
+    }
+
+    .stackly-gallery-overlay > a {
+        width: 33px;
+        height: 33px;
+    }
+
+    .stackly-gallery-overlay > a .material-icons {
+        font-size: 16px;
+    }
+
+
+    /* Bottom CTA */
+
+    .stackly-gallery-bottom {
+        margin-top: 18px;
+        padding: 17px 14px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        border-radius: 15px;
+        gap: 14px;
+    }
+
+    .stackly-gallery-bottom-text {
+        gap: 13px;
+    }
+
+    .stackly-gallery-bottom-text > .material-icons {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .stackly-gallery-bottom-text strong {
+        font-size: 11px;
+    }
+
+    .stackly-gallery-bottom-text small {
+        font-size: 11px;
+    }
+
+    .stackly-gallery-button {
+        width: 50%;
+        min-height: 43px;
+
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .stackly-gallery-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .stackly-gallery-heading h2 {
+        font-size: 33px;
+    }
+
+    .stackly-gallery-grid {
+        grid-template-rows:
+            215px
+            165px
+            215px;
+
+        gap: 8px;
+    }
+}
+
+
+/* =========================================
+   STACKLY TESTIMONIAL SECTION
+========================================= */
+
+.stackly-testimonials {
+    width: 100%;
+    padding: 105px 30px 95px;
+
+    background:
+        radial-gradient(
+            circle at 8% 15%,
+            rgba(201, 255, 145, .28),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 92% 85%,
+            rgba(22, 163, 74, .08),
+            transparent 25%
+        ),
+        #f5f9ef;
+
+    overflow: hidden;
+}
+
+.stackly-testimonials-container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.stackly-testimonials-heading {
+    width: 100%;
+    max-width: 720px;
+
+    margin: 0 auto 58px;
+
+    text-align: center;
+}
+
+.stackly-testimonial-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 17px;
+
+    background: #eaffc9;
+    color: #16a34a;
+
+    border-radius: 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.stackly-testimonial-label .material-icons {
+    font-size: 16px;
+}
+
+.stackly-testimonials-heading h2 {
+    margin: 21px 0 15px;
+
+    color: #1d2b52;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(43px, 5vw, 64px);
+
+    font-weight: 700;
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+.stackly-testimonials-heading h2 span {
+    color: #16a34a;
+}
+
+.stackly-testimonials-heading p {
+    max-width: 610px;
+
+    margin: 0 auto;
+
+    color: #68746f;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.stackly-testimonial-slider {
+    width: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.stackly-testimonial-track {
+    width: 100%;
+
+    display: flex;
+
+    gap: 24px;
+
+    will-change: transform;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.stackly-testimonial-card {
+    flex: 0 0 calc((100% - 48px) / 3);
+
+    min-width: 0;
+
+    position: relative;
+
+    padding: 31px 30px 28px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(29, 43, 82, .06);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 40px rgba(29, 43, 82, .07);
+
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translateY(55px);
+
+    will-change: transform, opacity;
+}
+
+.stackly-testimonial-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #c9ff91;
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.stackly-quote-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    background: #effbdc;
+
+    color: #16a34a;
+}
+
+.stackly-quote-icon .material-icons {
+    font-size: 25px;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.stackly-testimonial-text {
+    min-height: 100px;
+
+    margin: 0;
+
+    color: #4f5d59;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.stackly-testimonial-stars {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    margin-top: 17px;
+}
+
+.stackly-testimonial-stars .material-icons {
+    color: #f5b900;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   USER
+========================================= */
+
+.stackly-testimonial-user {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 24px;
+
+    padding-top: 19px;
+
+    border-top: 1px solid #edf1ed;
+}
+
+.stackly-user-avatar {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1d2b52;
+
+    border: 3px solid #c9ff91;
+
+    color: #c9ff91;
+}
+
+.stackly-user-avatar .material-icons {
+    font-size: 21px;
+}
+
+.stackly-testimonial-user h3 {
+    margin: 0;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.stackly-testimonial-user span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   DOTS
+========================================= */
+
+.stackly-testimonial-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 35px;
+}
+
+.testimonial-dot {
+    width: 8px;
+    height: 8px;
+
+    padding: 0;
+
+    border: 1px solid #16a34a;
+
+    background: transparent;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        width .3s ease,
+        background .3s ease,
+        border-color .3s ease;
+}
+
+.testimonial-dot.active {
+    width: 25px;
+
+    border-radius: 10px;
+
+    background: #16a34a;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .stackly-testimonials {
+        padding: 85px 20px 75px;
+    }
+
+    .stackly-testimonial-card {
+        flex: 0 0 calc((100% - 24px) / 2);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .stackly-testimonials {
+        padding: 70px 15px 65px;
+    }
+
+    .stackly-testimonials-heading {
+        margin-bottom: 38px;
+    }
+
+    .stackly-testimonial-label {
+        padding: 8px 14px;
+        font-size: 8px;
+        letter-spacing: 1.2px;
+    }
+
+    .stackly-testimonial-label .material-icons {
+        font-size: 14px;
+    }
+
+    .stackly-testimonials-heading h2 {
+        margin: 18px 0 13px;
+
+        font-size: 37px;
+
+        letter-spacing: -.8px;
+    }
+
+    .stackly-testimonials-heading p {
+        padding: 0 8px;
+
+        font-size: 10px;
+        line-height: 1.75;
+    }
+
+
+    /* EXACTLY ONE CARD */
+
+    .stackly-testimonial-slider {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .stackly-testimonial-track {
+        gap: 0;
+    }
+
+    .stackly-testimonial-card {
+        flex: 0 0 100%;
+        width: 100%;
+
+        padding: 25px 22px 23px;
+
+        border-radius: 18px;
+    }
+
+    .stackly-quote-icon {
+        width: 42px;
+        height: 42px;
+
+        margin-bottom: 13px;
+    }
+
+    .stackly-quote-icon .material-icons {
+        font-size: 22px;
+    }
+
+    .stackly-testimonial-text {
+        min-height: 105px;
+
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .stackly-testimonial-stars {
+        margin-top: 14px;
+    }
+
+    .stackly-testimonial-stars .material-icons {
+        font-size: 16px;
+    }
+
+    .stackly-testimonial-user {
+        margin-top: 19px;
+        padding-top: 16px;
+    }
+
+    .stackly-user-avatar {
+        width: 41px;
+        height: 41px;
+    }
+
+    .stackly-testimonial-user h3 {
+        font-size: 12px;
+    }
+
+    .stackly-testimonial-user span {
+        font-size: 8px;
+    }
+
+    .stackly-testimonial-dots {
+        margin-top: 25px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .stackly-testimonials {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .stackly-testimonials-heading h2 {
+        font-size: 33px;
+    }
+
+    .stackly-testimonial-card {
+        padding: 22px 18px 20px;
+    }
+
+    .stackly-testimonial-text {
+        font-size: 10px;
+    }
+
+}
+
+.stackly-user-avatar {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: #eaffc9;
+    border: 2px solid #16a34a;
+
+    box-shadow: 0 5px 15px rgba(29, 43, 82, 0.12);
+}
+
+.stackly-user-avatar img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+}
+@media (max-width: 600px) {
+
+    .stackly-user-avatar {
+        width: 43px;
+        height: 43px;
+        min-width: 43px;
+    }
+
+}

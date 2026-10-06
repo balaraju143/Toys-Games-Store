@@ -1,0 +1,2855 @@
+
+/* =========================================================
+   STACKLY ABOUT HERO
+========================================================= */
+
+.stackly-about-hero {
+    width: 100%;
+    min-height: 480px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../assets/joyful-children.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* DARK OVERLAY */
+
+.stackly-about-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(29, 43, 82, 0.96) 0%,
+            rgba(29, 43, 82, 0.82) 45%,
+            rgba(22, 163, 74, 0.42) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* SOFT COLOR GLOW */
+
+.stackly-about-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    left: -120px;
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(22, 163, 74, 0.25);
+
+    filter: blur(80px);
+
+    z-index: 1;
+}
+
+.stackly-about-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -100px;
+    top: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(201, 255, 145, 0.16);
+
+    filter: blur(90px);
+
+    z-index: 1;
+}
+
+
+/* CONTENT */
+
+.stackly-about-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 100px 25px 65px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+
+/* LABEL */
+
+.stackly-about-hero-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    color: #c9ff91;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.stackly-about-hero-label .material-icons {
+    font-size: 18px;
+}
+
+
+/* HEADING */
+
+.stackly-about-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: 700;
+
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.stackly-about-hero-content h1 span {
+    color: #16a34a;
+}
+
+
+/* DESCRIPTION */
+
+.stackly-about-hero-content p {
+    max-width: 680px;
+
+    margin: 22px auto 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+
+/* BREADCRUMB */
+
+.stackly-about-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 27px;
+}
+
+.stackly-about-breadcrumb a,
+.stackly-about-breadcrumb > span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.stackly-about-breadcrumb a {
+    color: #c9ff91;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.stackly-about-breadcrumb a:hover {
+    color: #ffffff;
+}
+
+.stackly-about-breadcrumb > span:last-child {
+    color: #ffffff;
+}
+
+.stackly-about-breadcrumb .material-icons {
+    color: #c9ff91;
+    font-size: 20px;
+}
+
+
+/* BOTTOM DOT */
+
+.stackly-about-hero-dot {
+    width: 38px;
+    height: 38px;
+
+    margin-top: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid rgba(201, 255, 145, 0.65);
+
+    border-radius: 50%;
+}
+
+.stackly-about-hero-dot span {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #c9ff91;
+
+    box-shadow: 0 0 15px rgba(201, 255, 145, 0.8);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .stackly-about-hero {
+        min-height: 480px;
+
+        background-position: center center;
+    }
+
+    .stackly-about-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(29, 43, 82, 0.94) 0%,
+                rgba(29, 43, 82, 0.86) 55%,
+                rgba(22, 163, 74, 0.45) 100%
+            );
+    }
+
+    .stackly-about-hero-content {
+        padding: 90px 20px 55px;
+
+        max-width: 100%;
+    }
+
+    .stackly-about-hero-label {
+        font-size: 11px;
+        letter-spacing: 1.2px;
+        margin-bottom: 14px;
+    }
+
+    .stackly-about-hero-label .material-icons {
+        font-size: 17px;
+    }
+
+    .stackly-about-hero-content h1 {
+        font-size: 39px;
+        line-height: 1.15;
+        letter-spacing: -0.7px;
+    }
+
+    .stackly-about-hero-content p {
+        max-width: 350px;
+
+        margin-top: 18px;
+
+        font-size: 13.5px;
+        line-height: 1.75;
+    }
+
+    .stackly-about-breadcrumb {
+        margin-top: 22px;
+        gap: 6px;
+    }
+
+    .stackly-about-breadcrumb a,
+    .stackly-about-breadcrumb > span:last-child {
+        font-size: 13px;
+    }
+
+    .stackly-about-breadcrumb .material-icons {
+        font-size: 18px;
+    }
+
+    .stackly-about-hero-dot {
+        width: 34px;
+        height: 34px;
+
+        margin-top: 30px;
+    }
+
+    .stackly-about-hero-dot span {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .stackly-about-hero {
+        min-height: 450px;
+    }
+
+    .stackly-about-hero-content {
+        padding: 82px 16px 48px;
+    }
+
+    .stackly-about-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .stackly-about-hero-content p {
+        font-size: 13px;
+        max-width: 320px;
+    }
+}
+
+
+/* =========================================================
+   STACKLY OUR STORY SECTION
+========================================================= */
+
+.stackly-story-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    background: #f8fff2;
+
+    padding: 100px 0;
+}
+
+
+/* CONTAINER */
+
+.stackly-story-container {
+    width: 100%;
+    max-width: 1320px;
+
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+    gap: 80px;
+}
+
+
+/* =========================================================
+   LEFT VISUAL
+========================================================= */
+
+.stackly-story-visual {
+    position: relative;
+
+    width: 100%;
+    max-width: 560px;
+
+    min-height: 560px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+/* SOFT BACKGROUND SHAPE */
+
+.stackly-story-shape {
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    left: -30px;
+    top: 45px;
+
+    border-radius: 45% 55% 50% 40%;
+
+    background: #eaffc9;
+
+    z-index: 0;
+}
+
+
+/* MAIN IMAGE */
+
+.stackly-story-main-image {
+    position: relative;
+
+    width: 470px;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    border: 8px solid #ffffff;
+
+    box-shadow:
+        0 25px 60px rgba(29, 43, 82, 0.16);
+
+    z-index: 2;
+}
+
+.stackly-story-main-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* SMALL IMAGE */
+
+.stackly-story-small-image {
+    position: absolute;
+
+    width: 270px;
+    height: 245px;
+
+    right: 5px;
+    bottom: 0;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    border: 7px solid #ffffff;
+
+    box-shadow:
+        0 22px 50px rgba(29, 43, 82, 0.18);
+
+    z-index: 3;
+}
+
+.stackly-story-small-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* ORANGE DECORATION */
+
+.stackly-story-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    left: -15px;
+    top: 5px;
+
+    border: 5px solid #f59e0b;
+
+    border-radius: 50%;
+
+    z-index: 4;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.stackly-story-content {
+    width: 100%;
+    max-width: 700px;
+}
+
+
+/* LABEL */
+
+.stackly-story-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 17px;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+}
+
+.stackly-story-label .material-icons {
+    font-size: 20px;
+}
+
+
+/* HEADING */
+
+.stackly-story-content h2 {
+    margin: 0;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    font-weight: 700;
+
+    line-height: 1.12;
+
+    letter-spacing: -1.5px;
+}
+
+.stackly-story-content h2 span {
+    color: #16a34a;
+}
+
+
+/* DESCRIPTION */
+
+.stackly-story-description {
+    max-width: 680px;
+
+    margin: 22px 0 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.stackly-story-feature {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-top: 27px;
+}
+
+
+/* FEATURE ICON */
+
+.stackly-story-feature-icon {
+    width: 58px;
+    min-width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+}
+
+.stackly-story-feature-icon .material-icons {
+    font-size: 27px;
+}
+
+
+/* FEATURE CONTENT */
+
+.stackly-story-feature-content h3 {
+    margin: 0 0 5px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.stackly-story-feature-content p {
+    max-width: 570px;
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13.5px;
+
+    line-height: 1.7;
+}
+
+
+/* SECOND FEATURE */
+
+.stackly-story-feature:nth-of-type(5)
+.stackly-story-feature-icon {
+    color: #f59e0b;
+}
+
+
+/* =========================================================
+   COUNTERS
+========================================================= */
+
+.stackly-story-stats {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid rgba(29, 43, 82, 0.16);
+}
+
+
+.stackly-story-stat {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+.stackly-story-stat:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 65px;
+
+    right: 0;
+    top: 2px;
+
+    background:
+        rgba(29, 43, 82, 0.20);
+
+    transform: rotate(25deg);
+}
+
+
+/* NUMBER */
+
+.stackly-story-stat h3 {
+    margin: 0;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 39px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* NAVY NUMBER */
+
+.stackly-story-stat:nth-child(2) h3 {
+    color: #1d2b52;
+}
+
+
+/* ORANGE NUMBER */
+
+.stackly-story-stat:nth-child(3) h3 {
+    color: #f59e0b;
+}
+
+
+/* LABEL */
+
+.stackly-story-stat p {
+    margin: 10px 0 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .stackly-story-container {
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+
+        max-width: 850px;
+    }
+
+    .stackly-story-visual {
+        margin: 0 auto;
+
+        width: 100%;
+
+        max-width: 560px;
+    }
+
+    .stackly-story-content {
+        max-width: 760px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .stackly-story-section {
+        padding: 70px 0;
+    }
+
+
+    .stackly-story-container {
+        width: 100%;
+
+        padding: 0 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 60px;
+    }
+
+
+    /* VISUAL */
+
+    .stackly-story-visual {
+        width: 100%;
+
+        max-width: 430px;
+
+        min-height: 450px;
+
+        margin: 0 auto;
+
+        display: block;
+    }
+
+
+    .stackly-story-shape {
+        width: 320px;
+        height: 320px;
+
+        left: 50%;
+        top: 40px;
+
+        transform: translateX(-50%);
+    }
+
+
+    .stackly-story-main-image {
+        width: calc(100% - 45px);
+
+        height: 390px;
+
+        margin: 0 auto;
+
+        border-radius: 20px;
+
+        border-width: 6px;
+    }
+
+
+    .stackly-story-small-image {
+        width: 205px;
+        height: 190px;
+
+        right: 0;
+
+        bottom: 0;
+
+        border-radius: 18px;
+
+        border-width: 5px;
+    }
+
+
+    .stackly-story-visual::before {
+        width: 32px;
+        height: 32px;
+
+        left: 5px;
+        top: 8px;
+
+        border-width: 4px;
+    }
+
+
+    /* CONTENT */
+
+    .stackly-story-content {
+        width: 100%;
+
+        max-width: 500px;
+
+        text-align: center;
+    }
+
+
+    .stackly-story-label {
+        justify-content: center;
+
+        font-size: 12px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .stackly-story-content h2 {
+        font-size: 35px;
+
+        line-height: 1.18;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .stackly-story-description {
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 13.5px;
+
+        line-height: 1.8;
+    }
+
+
+    /* FEATURES */
+
+    .stackly-story-feature {
+        max-width: 430px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+
+        gap: 13px;
+
+        margin-top: 24px;
+    }
+
+
+    .stackly-story-feature-icon {
+        width: 52px;
+        min-width: 52px;
+        height: 52px;
+
+        border-radius: 15px;
+    }
+
+
+    .stackly-story-feature-icon .material-icons {
+        font-size: 24px;
+    }
+
+
+    .stackly-story-feature-content h3 {
+        font-size: 15px;
+    }
+
+
+    .stackly-story-feature-content p {
+        font-size: 12.5px;
+
+        line-height: 1.65;
+    }
+
+
+    /* COUNTERS */
+
+    .stackly-story-stats {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 10px;
+
+        margin-top: 32px;
+
+        padding-top: 24px;
+    }
+
+
+    .stackly-story-stat {
+        text-align: center;
+    }
+
+
+    .stackly-story-stat:not(:last-child)::after {
+        display: none;
+    }
+
+
+    .stackly-story-stat h3 {
+        font-size: 27px;
+    }
+
+
+    .stackly-story-stat p {
+        margin-top: 7px;
+
+        font-size: 10.5px;
+
+        line-height: 1.4;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .stackly-story-section {
+        padding: 60px 0;
+    }
+
+
+    .stackly-story-container {
+        padding: 0 16px;
+
+        gap: 50px;
+    }
+
+
+    .stackly-story-visual {
+        min-height: 390px;
+    }
+
+
+    .stackly-story-main-image {
+        width: calc(100% - 35px);
+
+        height: 340px;
+    }
+
+
+    .stackly-story-small-image {
+        width: 175px;
+        height: 165px;
+    }
+
+
+    .stackly-story-content h2 {
+        font-size: 31px;
+    }
+
+
+    .stackly-story-description {
+        font-size: 13px;
+    }
+
+
+    .stackly-story-stat h3 {
+        font-size: 23px;
+    }
+
+
+    .stackly-story-stat p {
+        font-size: 9.5px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY VALUES SECTION
+========================================================= */
+
+.stackly-values-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background: #f5f9ef;
+}
+
+
+/* CONTAINER */
+
+.stackly-values-container {
+    width: 100%;
+    max-width: 1350px;
+
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.stackly-values-header {
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: 0 auto 60px;
+}
+
+
+/* BADGE */
+
+.stackly-values-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 20px;
+
+    border-radius: 30px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+.stackly-values-badge .material-icons {
+    font-size: 17px;
+}
+
+
+/* HEADING */
+
+.stackly-values-header h2 {
+    margin: 22px 0 0;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1.5px;
+}
+
+.stackly-values-header h2 span {
+    color: #16a34a;
+}
+
+
+/* ORANGE UNDERLINE */
+
+.stackly-values-line {
+    width: 85px;
+    height: 5px;
+
+    margin: 17px auto 0;
+
+    border-radius: 20px;
+
+    background: #f59e0b;
+
+    transform: rotate(-2deg);
+}
+
+
+/* DESCRIPTION */
+
+.stackly-values-header p {
+    max-width: 650px;
+
+    margin: 20px auto 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARDS GRID
+========================================================= */
+
+.stackly-values-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.stackly-value-card {
+    position: relative;
+
+    min-height: 380px;
+
+    padding: 42px 30px 30px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(29, 43, 82, 0.06);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 18px 45px rgba(29, 43, 82, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.stackly-value-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(29, 43, 82, 0.13);
+}
+
+
+/* SOFT BOTTOM SHAPE */
+
+.stackly-value-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 100px;
+
+    right: -45px;
+    bottom: -45px;
+
+    border-radius: 60% 0 0 0;
+
+    background: #eaffc9;
+
+    opacity: 0.75;
+
+    z-index: 0;
+}
+
+
+/* NUMBER */
+
+.stackly-value-number {
+    position: absolute;
+
+    top: 20px;
+    left: 25px;
+
+    color: rgba(22, 163, 74, 0.12);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    z-index: 1;
+}
+
+
+/* ICON */
+
+.stackly-value-icon {
+    position: relative;
+
+    width: 75px;
+    height: 75px;
+
+    margin: 18px auto 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    color: #ffffff;
+
+    z-index: 2;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+}
+
+.stackly-value-icon .material-icons {
+    font-size: 35px;
+}
+
+
+/* GREEN */
+
+.stackly-value-icon.green {
+    background: #16a34a;
+    box-shadow:
+        0 12px 28px rgba(22, 163, 74, 0.25);
+}
+
+
+/* ORANGE */
+
+.stackly-value-icon.orange {
+    background: #f59e0b;
+    box-shadow:
+        0 12px 28px rgba(245, 158, 11, 0.25);
+}
+
+
+/* BLUE */
+
+.stackly-value-icon.blue {
+    background: #2f80ed;
+    box-shadow:
+        0 12px 28px rgba(47, 128, 237, 0.25);
+}
+
+
+/* LIGHT GREEN */
+
+.stackly-value-icon.light-green {
+    background: #4cc9a3;
+    box-shadow:
+        0 12px 28px rgba(76, 201, 163, 0.25);
+}
+
+
+/* TITLE */
+
+.stackly-value-card h3 {
+    position: relative;
+
+    margin: 0;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+/* TEXT */
+
+.stackly-value-card p {
+    position: relative;
+
+    max-width: 260px;
+
+    margin: 12px auto 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13.5px;
+
+    line-height: 1.8;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+/* ARROW BUTTON */
+
+.stackly-value-link {
+    position: absolute;
+
+    left: 28px;
+    bottom: 27px;
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    text-decoration: none;
+
+    z-index: 3;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.stackly-value-link .material-icons {
+    font-size: 20px;
+}
+
+.stackly-value-link:hover {
+    transform: translateX(5px);
+
+    background: #16a34a;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .stackly-values-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 760px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .stackly-values-section {
+        padding: 70px 0;
+    }
+
+    .stackly-values-container {
+        padding: 0 18px;
+    }
+
+
+    .stackly-values-header {
+        margin-bottom: 40px;
+    }
+
+
+    .stackly-values-badge {
+        padding: 8px 17px;
+
+        font-size: 10.5px;
+    }
+
+
+    .stackly-values-header h2 {
+        margin-top: 17px;
+
+        font-size: 35px;
+
+        line-height: 1.18;
+
+        letter-spacing: -0.7px;
+    }
+
+
+    .stackly-values-line {
+        width: 65px;
+        height: 4px;
+
+        margin-top: 14px;
+    }
+
+
+    .stackly-values-header p {
+        max-width: 340px;
+
+        margin-top: 17px;
+
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    .stackly-values-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 390px;
+
+        margin: 0 auto;
+
+        gap: 20px;
+    }
+
+
+    .stackly-value-card {
+        min-height: 350px;
+
+        padding: 35px 25px 28px;
+
+        border-radius: 24px;
+    }
+
+
+    .stackly-value-number {
+        top: 18px;
+        left: 20px;
+
+        font-size: 32px;
+    }
+
+
+    .stackly-value-icon {
+        width: 68px;
+        height: 68px;
+
+        margin-top: 20px;
+
+        margin-bottom: 22px;
+
+        border-radius: 20px;
+    }
+
+
+    .stackly-value-icon .material-icons {
+        font-size: 31px;
+    }
+
+
+    .stackly-value-card h3 {
+        font-size: 18px;
+    }
+
+
+    .stackly-value-card p {
+        max-width: 300px;
+
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    .stackly-value-link {
+        left: 25px;
+        bottom: 23px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .stackly-values-section {
+        padding: 60px 0;
+    }
+
+    .stackly-values-container {
+        padding: 0 15px;
+    }
+
+    .stackly-values-header h2 {
+        font-size: 31px;
+    }
+
+    .stackly-value-card {
+        min-height: 335px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY STATS SECTION
+========================================================= */
+
+.stackly-stats-section {
+    width: 100%;
+    min-height: 320px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../assets/Building\ Joyful\ Toy\ Creations.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* OVERLAY */
+
+.stackly-stats-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(29, 43, 82, 0.96),
+            rgba(29, 43, 82, 0.86),
+            rgba(22, 163, 74, 0.38)
+        );
+
+    z-index: 1;
+}
+
+
+/* CONTAINER */
+
+.stackly-stats-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+    padding: 65px 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* STAT */
+
+.stackly-stat-item {
+    position: relative;
+
+    text-align: center;
+
+    padding: 5px 20px;
+}
+
+
+/* SEPARATOR */
+
+.stackly-stat-item:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 85px;
+
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: rgba(255, 255, 255, 0.22);
+}
+
+
+/* ICON */
+
+.stackly-stat-icon {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(201, 255, 145, 0.13);
+
+    color: #c9ff91;
+
+    border: 1px solid rgba(201, 255, 145, 0.25);
+}
+
+.stackly-stat-icon .material-icons {
+    font-size: 24px;
+}
+
+
+/* NUMBER */
+
+.stackly-stat-item h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 44px;
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+
+/* LABEL */
+
+.stackly-stat-item p {
+    margin: 12px 0 0;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .stackly-stats-section {
+        min-height: auto;
+
+        background-position: center;
+    }
+
+    .stackly-stats-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(29, 43, 82, 0.94),
+                rgba(29, 43, 82, 0.88)
+            );
+    }
+
+    .stackly-stats-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0;
+
+        padding: 48px 15px;
+    }
+
+
+    .stackly-stat-item {
+        min-height: 155px;
+
+        padding: 15px 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* MOBILE SEPARATORS */
+
+    .stackly-stat-item:nth-child(1)::after,
+    .stackly-stat-item:nth-child(3)::after {
+        display: block;
+
+        right: 0;
+        top: 50%;
+
+        width: 1px;
+        height: 75px;
+
+        background: rgba(255, 255, 255, 0.18);
+    }
+
+    .stackly-stat-item:nth-child(2)::after,
+    .stackly-stat-item:nth-child(4)::after {
+        display: none;
+    }
+
+
+    .stackly-stat-item:nth-child(1),
+    .stackly-stat-item:nth-child(2) {
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.15);
+    }
+
+
+    .stackly-stat-icon {
+        width: 42px;
+        height: 42px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .stackly-stat-icon .material-icons {
+        font-size: 21px;
+    }
+
+
+    .stackly-stat-item h3 {
+        font-size: 30px;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .stackly-stat-item p {
+        margin-top: 7px;
+
+        font-size: 9px;
+
+        letter-spacing: 0.7px;
+
+        line-height: 1.4;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .stackly-stats-container {
+        padding: 40px 10px;
+    }
+
+    .stackly-stat-item {
+        min-height: 145px;
+    }
+
+    .stackly-stat-item h3 {
+        font-size: 26px;
+    }
+
+    .stackly-stat-item p {
+        font-size: 8px;
+    }
+
+}   
+
+
+/* =========================================================
+   STACKLY JOURNEY SECTION
+========================================================= */
+
+.stackly-journey-section {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background: #ffffff;
+}
+
+.stackly-journey-container {
+    width: 100%;
+    max-width: 1320px;
+
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 75px;
+}
+
+
+/* =========================================================
+   LEFT IMAGE
+========================================================= */
+
+.stackly-journey-image {
+    position: relative;
+
+    width: 100%;
+    height: 590px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: #eaffc9;
+
+    box-shadow:
+        0 25px 60px rgba(29, 43, 82, 0.14);
+}
+
+.stackly-journey-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* IMAGE BADGE */
+
+.stackly-journey-image-badge {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 18px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 12px 30px rgba(29, 43, 82, 0.15);
+}
+
+.stackly-journey-image-badge > .material-icons {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-size: 21px;
+}
+
+.stackly-journey-image-badge strong {
+    display: block;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+}
+
+.stackly-journey-image-badge small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.stackly-journey-content {
+    width: 100%;
+    max-width: 650px;
+}
+
+
+/* LABEL */
+
+.stackly-journey-label {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 17px;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+.stackly-journey-label .material-icons {
+    font-size: 18px;
+}
+
+
+/* HEADING */
+
+.stackly-journey-content h2 {
+    margin: 0;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(38px, 4vw, 55px);
+
+    font-weight: 700;
+
+    line-height: 1.14;
+
+    letter-spacing: -1.3px;
+}
+
+.stackly-journey-content h2 span {
+    color: #16a34a;
+}
+
+
+/* TEXT */
+
+.stackly-journey-text {
+    margin: 21px 0 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14.5px;
+
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.stackly-journey-highlights {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.stackly-journey-highlight {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+.stackly-journey-highlight > .material-icons {
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-size: 21px;
+}
+
+.stackly-journey-highlight h3 {
+    margin: 1px 0 4px;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.stackly-journey-highlight p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12.5px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.stackly-journey-bottom {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 32px;
+
+    padding-top: 27px;
+
+    border-top:
+        1px solid rgba(29, 43, 82, 0.12);
+}
+
+
+/* BUTTON */
+
+.stackly-journey-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    background: #16a34a;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12.5px;
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.stackly-journey-button .material-icons {
+    font-size: 18px;
+}
+
+.stackly-journey-button:hover {
+    transform: translateY(-3px);
+
+    background: #0d7f38;
+}
+
+
+/* MINI INFO */
+
+.stackly-journey-mini {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.stackly-journey-mini > .material-icons {
+    color: #f59e0b;
+
+    font-size: 27px;
+}
+
+.stackly-journey-mini strong {
+    display: block;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11.5px;
+}
+
+.stackly-journey-mini small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 9.5px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .stackly-journey-container {
+        grid-template-columns: 1fr;
+
+        max-width: 800px;
+
+        gap: 55px;
+    }
+
+    .stackly-journey-image {
+        height: 500px;
+    }
+
+    .stackly-journey-content {
+        max-width: 750px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .stackly-journey-section {
+        padding: 70px 0;
+    }
+
+    .stackly-journey-container {
+        padding: 0 18px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 45px;
+    }
+
+    .stackly-journey-image {
+        width: 100%;
+        max-width: 500px;
+
+        height: 390px;
+
+        border-radius: 22px;
+    }
+
+    .stackly-journey-image-badge {
+        left: 15px;
+        bottom: 15px;
+
+        padding: 10px 13px;
+
+        gap: 9px;
+    }
+
+    .stackly-journey-image-badge > .material-icons {
+        width: 36px;
+        height: 36px;
+
+        font-size: 18px;
+    }
+
+    .stackly-journey-content {
+        width: 100%;
+        max-width: 500px;
+
+        text-align: center;
+    }
+
+    .stackly-journey-label {
+        justify-content: center;
+
+        font-size: 10.5px;
+    }
+
+    .stackly-journey-content h2 {
+        font-size: 34px;
+
+        line-height: 1.18;
+    }
+
+    .stackly-journey-text {
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+    .stackly-journey-highlights {
+        text-align: left;
+    }
+
+    .stackly-journey-highlight {
+        gap: 11px;
+    }
+
+    .stackly-journey-highlight > .material-icons {
+        width: 43px;
+        height: 43px;
+
+        font-size: 20px;
+    }
+
+    .stackly-journey-highlight h3 {
+        font-size: 14px;
+    }
+
+    .stackly-journey-highlight p {
+        font-size: 12px;
+    }
+
+    .stackly-journey-bottom {
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    .stackly-journey-button {
+        width: auto;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .stackly-journey-section {
+        padding: 60px 0;
+    }
+
+    .stackly-journey-container {
+        padding: 0 15px;
+    }
+
+    .stackly-journey-image {
+        height: 340px;
+    }
+
+    .stackly-journey-content h2 {
+        font-size: 30px;
+    }
+
+    .stackly-journey-text {
+        font-size: 12.5px;
+    }
+
+}
+
+
+/* =========================================================
+   STACKLY TEAM SECTION
+========================================================= */
+
+.stackly-team-section {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background: #f8fff2;
+}
+
+.stackly-team-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.stackly-team-header {
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.stackly-team-label {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 9px 20px;
+
+    border-radius: 30px;
+
+    background: #eaffc9;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+.stackly-team-label .material-icons {
+    font-size: 18px;
+}
+
+
+.stackly-team-header h2 {
+    margin: 22px 0 0;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1.5px;
+}
+
+.stackly-team-header h2 span {
+    color: #16a34a;
+}
+
+
+.stackly-team-line {
+    width: 80px;
+    height: 5px;
+
+    margin: 17px auto 0;
+
+    border-radius: 20px;
+
+    background: #f59e0b;
+}
+
+
+.stackly-team-header p {
+    max-width: 650px;
+
+    margin: 20px auto 0;
+
+    color: #64748b;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TEAM GRID
+========================================================= */
+
+.stackly-team-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.stackly-team-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 18px 45px rgba(29, 43, 82, 0.09);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.stackly-team-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 25px 55px rgba(29, 43, 82, 0.14);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.stackly-team-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 365px;
+
+    overflow: hidden;
+}
+
+.stackly-team-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.stackly-team-card:hover
+.stackly-team-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.stackly-team-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: center;
+
+    padding-bottom: 20px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(29, 43, 82, 0.72),
+            transparent 48%
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.35s ease;
+
+    pointer-events: none;
+}
+
+
+/* DESKTOP HOVER */
+
+@media (min-width: 701px) {
+
+    .stackly-team-card:hover
+    .stackly-team-overlay {
+        opacity: 1;
+
+        pointer-events: auto;
+    }
+
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.stackly-team-socials {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+}
+
+.stackly-team-socials a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #1d2b52;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transform: translateY(15px);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.stackly-team-card:hover
+.stackly-team-socials a {
+    transform: translateY(0);
+}
+
+.stackly-team-socials a:hover {
+    background: #16a34a;
+
+    color: #ffffff;
+}
+
+.stackly-team-socials i {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.stackly-team-info {
+    padding: 23px 15px 25px;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+.stackly-team-info h3 {
+    margin: 0;
+
+    color: #1d2b52;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.stackly-team-info p {
+    margin: 7px 0 0;
+
+    color: #16a34a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12.5px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .stackly-team-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 780px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .stackly-team-section {
+        padding: 70px 0;
+    }
+
+    .stackly-team-container {
+        padding: 0 18px;
+    }
+
+    .stackly-team-header {
+        margin-bottom: 40px;
+    }
+
+    .stackly-team-label {
+        padding: 8px 16px;
+
+        font-size: 10.5px;
+    }
+
+    .stackly-team-header h2 {
+        margin-top: 17px;
+
+        font-size: 34px;
+
+        line-height: 1.18;
+
+        letter-spacing: -0.7px;
+    }
+
+    .stackly-team-line {
+        width: 65px;
+
+        height: 4px;
+
+        margin-top: 14px;
+    }
+
+    .stackly-team-header p {
+        max-width: 340px;
+
+        margin-top: 17px;
+
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    .stackly-team-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 390px;
+
+        margin: 0 auto;
+
+        gap: 22px;
+    }
+
+
+    .stackly-team-card {
+        border-radius: 22px;
+    }
+
+
+    .stackly-team-image {
+        height: 390px;
+    }
+
+
+    /* TAP OVERLAY */
+
+    .stackly-team-card.mobile-active
+    .stackly-team-overlay {
+        opacity: 1;
+
+        pointer-events: auto;
+    }
+
+
+    .stackly-team-card.mobile-active
+    .stackly-team-socials a {
+        transform: translateY(0);
+    }
+
+
+    .stackly-team-info {
+        padding: 20px 15px 23px;
+    }
+
+    .stackly-team-info h3 {
+        font-size: 17px;
+    }
+
+    .stackly-team-info p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .stackly-team-section {
+        padding: 60px 0;
+    }
+
+    .stackly-team-container {
+        padding: 0 15px;
+    }
+
+    .stackly-team-header h2 {
+        font-size: 30px;
+    }
+
+    .stackly-team-image {
+        height: 350px;
+    }
+
+}

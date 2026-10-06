@@ -1,0 +1,1023 @@
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   STACKLY TOYS & GAMES NAVBAR
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.stackly-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    background: #ffffff;
+}
+
+/* NAVBAR */
+.stackly-navbar {
+    width: 100%;
+    height: 82px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+/* LOGO */
+.stackly-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.stackly-logo img {
+    width: 255px;
+    height: auto;
+    display: block;
+    margin-left: 45px;
+}
+
+/* DESKTOP NAV */
+.stackly-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    margin-left: auto;
+    margin-right: 45px;
+}
+
+.stackly-nav-links a {
+    position: relative;
+    color: #14201d;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 30px 0;
+    transition: color 0.3s ease;
+}
+
+.stackly-nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: #16a34a;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.stackly-nav-links a:hover,
+.stackly-nav-links a.active {
+    color: #16a34a;
+}
+
+.stackly-nav-links a:hover::after,
+.stackly-nav-links a.active::after {
+    width: 25px;
+}
+
+/* AUTH BUTTONS */
+.stackly-auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.stackly-auth a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    color: #14201d;
+    padding: 11px 18px;
+}
+
+.login-btn:hover {
+    color: #16a34a;
+}
+
+.signup-btn {
+    color: #ffffff;
+    background: #16a34a;
+    padding: 11px 21px;
+    border-radius: 30px;
+    border: 1px solid #16a34a;
+}
+
+.signup-btn:hover {
+    background: #0d7f38;
+    border-color: #0d7f38;
+    transform: translateY(-2px);
+}
+
+/* MOBILE TOGGLE */
+.stackly-menu-toggle {
+    display: none;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    background: #16a34a;
+    border-radius: 50%;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stackly-menu-toggle span {
+    width: 20px;
+    height: 2px;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* X ANIMATION */
+.stackly-menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.stackly-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.stackly-menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+.stackly-mobile-menu {
+    display: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .stackly-navbar {
+        padding: 0 3%;
+    }
+
+    .stackly-nav-links {
+        gap: 22px;
+        margin-right: 20px;
+    }
+
+    .stackly-nav-links a {
+        font-size: 14px;
+    }
+
+    .stackly-logo img {
+        width: 190px;
+    }
+
+    .stackly-auth a {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   STACKLY NAVBAR - MOBILE ONLY
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* MAIN NAVBAR */
+    .stackly-navbar {
+        width: 100%;
+        height: 70px;
+
+        padding: 0 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #ffffff;
+
+        position: relative;
+        z-index: 100001;
+    }
+
+
+    /* =====================================================
+       LOGO
+    ===================================================== */
+
+    .stackly-logo {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+        z-index: 100003;
+
+        flex-shrink: 0;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .stackly-logo img {
+        display: block;
+
+        width: 235px;
+
+        height: auto;
+
+        margin: 0;
+        margin-left:-30px;
+    }
+
+
+    /* =====================================================
+       HIDE DESKTOP NAVIGATION
+    ===================================================== */
+
+    .stackly-nav-links,
+    .stackly-auth {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       MOBILE TOGGLE
+    ===================================================== */
+
+    .stackly-menu-toggle {
+        width: 42px;
+        height: 42px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        padding: 0;
+
+        margin: 0;
+
+        border: none;
+
+        border-radius: 50%;
+
+        background: #16a34a;
+
+        cursor: pointer;
+
+        flex-shrink: 0;
+
+        position: relative;
+        z-index: 100003;
+    }
+
+
+    .stackly-menu-toggle span {
+        display: block;
+
+        width: 19px;
+        height: 2px;
+
+        background: #ffffff;
+
+        border-radius: 10px;
+
+        transition: all 0.3s ease;
+    }
+
+
+    /* =====================================================
+       HAMBURGER → X
+    ===================================================== */
+
+    .stackly-menu-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .stackly-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .stackly-menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    .stackly-mobile-menu {
+        display: block;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: #ffffff;
+
+        padding: 5px 18px 24px;
+
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+
+        box-shadow:
+            0 15px 35px rgba(0, 0, 0, 0.12);
+
+        transform: translateY(-15px);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        pointer-events: none;
+
+        transition:
+            opacity 0.35s ease,
+            transform 0.35s ease,
+            visibility 0.35s ease;
+
+        z-index: 100000;
+    }
+
+
+    /* MENU OPEN */
+
+    .stackly-mobile-menu.show {
+        transform: translateY(0);
+
+        opacity: 1;
+
+        visibility: visible;
+
+        pointer-events: auto;
+    }
+
+
+    /* =====================================================
+       MOBILE PAGE LINKS
+    ===================================================== */
+
+    .mobile-menu-links {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding-top: 5px;
+    }
+
+
+    .mobile-menu-links a {
+        width: 100%;
+
+        display: block;
+
+        text-align: center;
+
+        padding: 13px 10px;
+
+        color: #14201d;
+
+        text-decoration: none;
+
+        font-family: "Poppins", sans-serif;
+
+        font-size: 15px;
+
+        font-weight: 600;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+        transition:
+            color 0.3s ease,
+            background 0.3s ease;
+    }
+
+
+    .mobile-menu-links a:hover,
+    .mobile-menu-links a.active {
+        color: #16a34a;
+
+        background: #f4fff7;
+    }
+
+
+    /* =====================================================
+       LOGIN / SIGNUP
+    ===================================================== */
+
+    .mobile-auth {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+
+        margin-top: 18px;
+    }
+
+
+    .mobile-auth a {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        min-width: 105px;
+
+        padding: 10px 18px;
+
+        border-radius: 25px;
+
+        text-decoration: none;
+
+        font-family: "Poppins", sans-serif;
+
+        font-size: 13px;
+
+        font-weight: 600;
+
+        transition: all 0.3s ease;
+    }
+
+
+    .mobile-login {
+        color: #14201d;
+
+        background: #ffffff;
+
+        border: 1px solid #d9e3dd;
+    }
+
+
+    .mobile-signup {
+        color: #ffffff;
+
+        background: #16a34a;
+
+        border: 1px solid #16a34a;
+    }
+
+
+    .mobile-login:hover {
+        border-color: #16a34a;
+
+        color: #16a34a;
+    }
+
+
+    .mobile-signup:hover {
+        background: #0d7f38;
+
+        border-color: #0d7f38;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .stackly-navbar {
+        height: 66px;
+
+        padding: 0 13px;
+    }
+
+
+    .stackly-logo img {
+        width: 125px;
+        max-width: 125px;
+    }
+
+
+    .stackly-menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .stackly-menu-toggle span {
+        width: 18px;
+    }
+
+
+    .stackly-mobile-menu {
+        top: 66px;
+    }
+
+
+    .mobile-menu-links a {
+        font-size: 14px;
+
+        padding: 12px 10px;
+    }
+
+
+    .mobile-auth a {
+        min-width: 95px;
+
+        padding: 9px 15px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   STACKLY FOOTER
+========================================================= */
+
+.stackly-footer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #1d2b52;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* FOOTER CONTAINER */
+
+.stackly-footer-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 75px 40px 65px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 55px;
+}
+
+
+/* BRAND */
+
+.stackly-footer-brand {
+    max-width: 330px;
+}
+
+.stackly-footer-logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: -40px;
+}
+
+.stackly-footer-logo img {
+    width: 225px;
+    height: auto;
+    display: block;
+}
+
+.stackly-footer-brand p {
+    margin: 0;
+    max-width: 330px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: -30px;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+   EXACTLY 4 ICONS
+========================================================= */
+
+.stackly-footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 27px;
+}
+
+.stackly-footer-social a {
+    width: 42px;
+    height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(201, 255, 145, 0.25);
+
+    color: #c9ff91;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.stackly-footer-social a .material-icons {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.stackly-footer-social a:hover {
+    transform: translateY(-5px);
+    background: #16a34a;
+    border-color: #16a34a;
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(22, 163, 74, 0.28);
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.stackly-footer-column h3 {
+    position: relative;
+
+    margin: 0 0 24px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.stackly-footer-column h3::after {
+    content: "";
+
+    display: block;
+
+    width: 35px;
+    height: 3px;
+
+    margin-top: 10px;
+
+    border-radius: 20px;
+
+    background: #c9ff91;
+}
+
+.stackly-footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stackly-footer-column ul li {
+    margin-bottom: 13px;
+}
+
+.stackly-footer-column ul li a {
+    position: relative;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+.stackly-footer-column ul li a:hover {
+    color: #c9ff91;
+    padding-left: 6px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.stackly-footer-contact {
+    max-width: 270px;
+}
+
+.stackly-contact-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 19px;
+}
+
+.stackly-contact-item .material-icons {
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(201, 255, 145, 0.10);
+
+    color: #c9ff91;
+
+    font-size: 18px;
+}
+
+.stackly-contact-item a {
+    padding-top: 6px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13.5px;
+    line-height: 1.5;
+
+    transition: color 0.3s ease;
+}
+
+.stackly-contact-item a:hover {
+    color: #c9ff91;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.stackly-footer-bottom {
+    width: 100%;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+    background: rgba(0, 0, 0, 0.10);
+}
+
+.stackly-footer-bottom-inner {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.stackly-footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.stackly-footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stackly-footer-legal a {
+    color: rgba(255, 255, 255, 0.55);
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+
+    transition: color 0.3s ease;
+}
+
+.stackly-footer-legal a:hover {
+    color: #c9ff91;
+}
+
+.stackly-footer-legal span {
+    color: #c9ff91;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .stackly-footer-container {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 40px;
+        padding: 60px 30px 50px;
+    }
+
+    .stackly-footer-brand {
+        grid-column: 1 / -1;
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .stackly-footer-container {
+        grid-template-columns: 1fr;
+        gap: 38px;
+
+        padding: 55px 22px 45px;
+    }
+
+    .stackly-footer-brand {
+        grid-column: auto;
+        max-width: 100%;
+    }
+
+    .stackly-footer-logo {
+        margin-bottom: 18px;
+    }
+
+    .stackly-footer-logo img {
+        width: 190px;
+    }
+
+    .stackly-footer-brand p {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    /* EXACTLY 4 SOCIAL ICONS */
+
+    .stackly-footer-social {
+        gap: 10px;
+        margin-top: 22px;
+    }
+
+    .stackly-footer-social a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stackly-footer-social a .material-icons {
+        font-size: 19px;
+    }
+
+    .stackly-footer-column h3 {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .stackly-footer-column ul li {
+        margin-bottom: 11px;
+    }
+
+    .stackly-footer-column ul li a {
+        font-size: 13px;
+    }
+
+    .stackly-footer-contact {
+        max-width: 100%;
+    }
+
+    .stackly-contact-item {
+        margin-bottom: 16px;
+    }
+
+    .stackly-footer-bottom-inner {
+        padding: 18px 22px;
+
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 10px;
+    }
+
+    .stackly-footer-bottom p {
+        font-size: 11px;
+    }
+
+    .stackly-footer-legal {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    .stackly-footer-legal a,
+    .stackly-footer-legal span {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .stackly-footer-container {
+        padding: 48px 18px 40px;
+        gap: 34px;
+    }
+
+    .stackly-footer-logo img {
+        width: 180px;
+    }
+
+    .stackly-footer-social {
+        gap: 8px;
+    }
+
+    .stackly-footer-social a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .stackly-footer-social a .material-icons {
+        font-size: 18px;
+    }
+
+    .stackly-footer-bottom-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+
+.stackly-footer-contact {
+    transform: translateY(-6px) !important;
+}
