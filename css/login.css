@@ -850,3 +850,17 @@
         padding: 8px 6px;
     }
 }
+
+
+#stacklyPassword::-ms-reveal,
+#stacklyPassword::-ms-clear {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    visibility: hidden !important;
+}
+
+#stacklyPassword {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}

@@ -264,3 +264,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+/* =========================================================
+   STACKLY PREMIUM LOADER
+========================================================= */
+
+(function () {
+
+    const loader = document.getElementById("stacklyPageLoader");
+
+    if (!loader) return;
+
+    /*
+     * Loader automatically finishes in about 2.2 seconds.
+     * It will never remain stuck waiting for images.
+     */
+
+    const hideLoader = () => {
+
+        loader.classList.add("loader-hidden");
+
+        setTimeout(() => {
+            loader.remove();
+        }, 800);
+
+    };
+
+
+    /* Minimum premium animation time */
+    setTimeout(hideLoader, 2200);
+
+
+    /* Safety fallback */
+    setTimeout(hideLoader, 2800);
+
+})();
